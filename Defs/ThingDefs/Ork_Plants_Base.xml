@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="OrkoidPlantBase" Abstract="True">
+    <category>Plant</category>
+    <thingClass>Plant</thingClass>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Flammability>1</Flammability>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <Nutrition>0.80</Nutrition>
+    </statBases>
+	<pathCost>10</pathCost>
+    <tickerType>Long</tickerType>
+    <selectable>true</selectable>
+    <neverMultiSelect>True</neverMultiSelect>
+    <drawerType>MapMeshOnly</drawerType>
+    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+    <graphicData>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutPlant</shaderType>
+    </graphicData>
+    <ingestible>
+      <foodType>Plant</foodType>
+      <preferability>RawBad</preferability>
+	</ingestible>
+    <plant>
+      <neverBlightable>true</neverBlightable>
+      <growMinGlow>0</growMinGlow>
+      <growOptimalGlow>0</growOptimalGlow>
+	  <growDays>5</growDays>
+      <wildOrder>2</wildOrder>
+      <purpose>Misc</purpose>
+	  <dieIfLeafless>true</dieIfLeafless>
+	  <maxMeshCount>1</maxMeshCount>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestYield>1</harvestYield>
+	  <fertilityMin>0.7</fertilityMin>
+	  <fertilitySensitivity>1.0</fertilitySensitivity>
+      <soundHarvesting>Harvest_Standard</soundHarvesting>
+      <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+      <sowWork>170</sowWork>
+      <harvestWork>250</harvestWork>
+      <visualSizeRange>
+        <min>0.3</min>
+        <max>1.20</max>
+      </visualSizeRange>
+      <topWindExposure>0.1</topWindExposure>
+    </plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrkoidPlantBase">
+    <defName>Plant_OrkoidFungus</defName>
+    <label>orkoid fungus</label>
+    <description>A small brown mushroom typically found in and around ork settlements. It smells like an old, dirty rag pulled from the stomach of a rotting muffalo - but it tastes surprisingly good when cooked.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>2</Beauty>
+      <Nutrition>0.35</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plants/Orkoid_Fungus</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>10</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.01</fertilityMin>
+      <fertilitySensitivity>0.15</fertilitySensitivity>
+      <growDays>30</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestYield>20</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <!-- <harvestedThingDef>RawFungus</harvestedThingDef> -->
+	  <harvestedThingDef>Mote_MakeOrkoid_Cultivated</harvestedThingDef>
+	  <sowTags>
+		<li>Ground</li>
+	  </sowTags>
+      <maxMeshCount>4</maxMeshCount>
+      <neverBlightable>true</neverBlightable>
+      <visualSizeRange>
+        <min>0.4</min>
+        <max>0.7</max>
+      </visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterRadius>3</wildClusterRadius>
+      <wildClusterWeight>5</wildClusterWeight>
+      <purpose>Food</purpose>
+    </plant>
+	<!--
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(5,25,32,0)</glowColor>
+      </li>
+    </comps>
+	-->
+	    <storedConceptLearnOpportunity>OrkoidFungus</storedConceptLearnOpportunity> 
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_MakeOrkoid_Cultivated</defName>
+    <thingClass>AdeptusMechanicus.OrkGetPawnThing</thingClass>
+    <graphicData>
+      <texPath>Things/Mote/Bombardment</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.01</solidTime>
+      <fadeOutTime>0.01</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="OrkoidPlantBase">
+	<defName>Plant_OrkoidCocoon</defName>
+	<label>Orkoid Fungal Cocoon</label>
+	<description>A patch of Orkoid fungal spores, the basis of the orkoid ecology.</description>
+	<graphicData>
+	  <texPath>Things/Plants/Orkoid_Cocoon</texPath>
+	</graphicData>
+	<plant>
+	  <immatureGraphicPath>Things/Plants/Orkoid_Cocoon_Immature</immatureGraphicPath>
+	  <harvestedThingDef>Mote_MakeOrkoid_Wild</harvestedThingDef>
+      <growDays>30</growDays>
+	  <sowTags>
+	  <!--
+		<li>Ground</li>
+		<li>Hydroponic</li>
+		-->
+	  </sowTags>
+	</plant>
+  </ThingDef>
+  
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_MakeOrkoid_Wild</defName>
+    <thingClass>AdeptusMechanicus.OrkGetPawnThingWild</thingClass>
+    <graphicData>
+      <texPath>Things/Mote/Bombardment</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.01</fadeInTime>
+      <solidTime>0.01</solidTime>
+      <fadeOutTime>0.01</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Plant_OrkFungus</defName>
+    <label>orkoid fungus</label>
+    <description>Raw orkoid fungus.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/RawFungus</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

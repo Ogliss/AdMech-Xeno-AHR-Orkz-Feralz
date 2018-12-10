@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\admechb19 scourcefile test\Source\PlantHuman\obj\Debug\PlantHuman.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Assemblies\AdeptusMechanicusOrkz.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz\Assemblies\AdeptusMechanicusOrkz.pdb
+C:\Users\User\Desktop\admechb19 scourcefile test\Source\PlantHuman\obj\Debug\AdeptusMechanicusOrkz.dll
+C:\Users\User\Desktop\admechb19 scourcefile test\Source\PlantHuman\obj\Debug\AdeptusMechanicusOrkz.pdb
+C:\Users\User\Desktop\admechb19 scourcefile test\Source\PlantHuman\obj\Debug\PlantHuman.csprojResolveAssemblyReference.cache
