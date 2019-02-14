@@ -16,9 +16,9 @@ namespace RimWorld
         public static PawnKindDef Squig;
 
         public static PawnKindDef Snotling;
-       
+
         public static PawnKindDef WildGrot;
-        
+
         public static PawnKindDef WildOrk;
     }
 }

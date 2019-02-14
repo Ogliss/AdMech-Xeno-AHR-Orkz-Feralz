@@ -39,7 +39,7 @@
     </apparelMoney>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="BaseFeralOrkPawnKind">
     <defName>FeralWeirdOrk</defName>
     <label>Feral Ork colonist</label>
@@ -83,7 +83,5 @@
       <min>200</min>
       <max>200</max>
     </apparelMoney>
-    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
-
 </Defs>

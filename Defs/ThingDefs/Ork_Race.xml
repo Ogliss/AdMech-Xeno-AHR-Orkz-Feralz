@@ -285,6 +285,92 @@
 			<notXenophobistTowards>
 				<li>Alien_Grot</li>
 			</notXenophobistTowards>
+		<factionRelations>
+                <li>
+                    <factions>
+                       <li>OrkFaction</li>
+                       <li>FeralOrkFaction</li>
+					   <li>OrkPlayerColony</li>
+					   <li>OrkPlayerColonyTribal</li>
+                    </factions>
+                    <goodwill>
+                       <min>-10</min>
+                       <max>40</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+					   <li>PlayerColony</li>
+					   <li>PlayerTribe</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>10</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>EldarFaction</li>
+					   <li>EldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>DarkEldarFaction</li>
+					   <li>DarkEldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>TauFaction</li>
+                       <li>KrootFaction</li>
+					   <li>TauPlayerColony</li>
+					   <li>KrootPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-30</max>
+                    </goodwill>
+                </li>  
+				<li>
+                    <factions>
+                       <li>ImperialMechanicusFaction</li>
+					   <li>ImperialMechanicusPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>ImperialHumanFaction</li>
+					   <li>ImperialHumanPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>ImperialAstartesFaction</li>
+					   <li>ImperialAstartesPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+		</factionRelations>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -301,6 +387,9 @@
         </hairSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
+                <li>AteOrkMeal</li>
+                <li>AteOrkFungusDirect</li>
+                <li>AteOrkFungusAsIngredient</li>
                 <li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
                 <li>AteHumanlikeMeatDirect</li>
@@ -487,7 +576,7 @@
       <meatColor>(200,135,100)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.25</baseHealthScale>
-      <foodType>OmnivoreHuman</foodType>
+      <foodType>OmnivoreAnimal</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
       <litterSizeCurve>
         <points>
@@ -721,6 +810,9 @@
         </hairSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
+                <li>AteOrkMeal</li>
+                <li>AteOrkFungusDirect</li>
+                <li>AteOrkFungusAsIngredient</li>
                 <li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
                 <li>AteHumanlikeMeatDirect</li>
@@ -909,8 +1001,8 @@
       <meatColor>(0, 0, 128)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>
-      <foodType>OmnivoreHuman</foodType>
-      <gestationPeriodDays>45</gestationPeriodDays>
+      <foodType>OmnivoreAnimal</foodType>
+      <gestationPeriodDays>15</gestationPeriodDays>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>

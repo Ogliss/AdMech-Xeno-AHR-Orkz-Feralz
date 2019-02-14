@@ -2,7 +2,9 @@
 <ModMetaData>
 	<name>Playable Feral Orkz R1.0</name>
 	<author>Ogliss</author>
-	<targetVersion>1.0.2059</targetVersion>
+	<supportedVersions>
+        <li>1.0</li>
+	</supportedVersions>
 	<description>V1.0
 	Requires new start or  one of those faction managers.
 	Adds plyable WHF Orks

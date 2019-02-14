@@ -34,11 +34,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comp_OrkoidSpores.cs" />
     <Compile Include="IncidentWorker_OrkoidFungalSprout.cs" />
     <Compile Include="OGOrkPawnKindDefOf.cs" />
     <Compile Include="OGOrkFactionDefOf.cs" />
-    <Compile Include="OrkGetPawnThingWild.cs" />
-    <Compile Include="OrkGetPawnThing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OGOrkThingDefOf.cs" />
   </ItemGroup>

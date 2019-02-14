@@ -58,4 +58,117 @@
       </li>
     </pawnGroupMakers>
     </FactionDef>
+	
+  
+    <FactionDef Parent="FeralOrkFactionBase">
+    <defName>OrkPlayerColonyTribalNoWeirdboyz</defName>
+    <label>Ork Tribal</label>
+    <description>Ork Tribal Start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>FeralOrk</basicMemberKind>
+    <pawnsPlural>boyz</pawnsPlural>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
+    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>Ork_Standard</li>
+			<li>Ork_Gretchin</li>
+  	</backstoryCategories>
+    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+	<expandingIconTexture>Icons/FeralOrkIconB</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <FeralGrot>100</FeralGrot>
+          <FeralOrk>100</FeralOrk>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    </FactionDef>
+	
+	
+  <FactionDef Abstract="True" Name="FeralGrotFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+    <FactionDef Parent="FeralGrotFactionBase">
+    <defName>GrotPlayerColonyTribal</defName>
+    <label>Grot Tribal</label>
+    <description>Grot Tribal Start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>FeralGrot</basicMemberKind>
+    <pawnsPlural>gitz</pawnsPlural>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
+    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategories>
+			<li>Ork_Standard</li>
+			<li>Ork_Gretchin</li>
+  	</backstoryCategories>
+    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+	<expandingIconTexture>Icons/FeralOrkIconB</expandingIconTexture>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+		<li>GrotHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <FeralGrot>100</FeralGrot>
+          <FeralOrk>100</FeralOrk>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    </FactionDef>
 </Defs>

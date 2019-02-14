@@ -31,7 +31,7 @@
 	  <growDays>5</growDays>
       <wildOrder>2</wildOrder>
       <purpose>Misc</purpose>
-	  <dieIfLeafless>true</dieIfLeafless>
+	  <dieIfLeafless>false</dieIfLeafless>
 	  <maxMeshCount>1</maxMeshCount>
 	  <harvestTag>Standard</harvestTag>
 	  <harvestYield>1</harvestYield>
@@ -69,12 +69,12 @@
     <plant>
       <fertilityMin>0.01</fertilityMin>
       <fertilitySensitivity>0.15</fertilitySensitivity>
-      <growDays>30</growDays>
-      <dieIfLeafless>true</dieIfLeafless>
+      <growDays>6</growDays>
+      <dieIfLeafless>false</dieIfLeafless>
       <harvestYield>20</harvestYield>
       <harvestTag>Standard</harvestTag>
-      <!-- <harvestedThingDef>RawFungus</harvestedThingDef> -->
-	  <harvestedThingDef>Mote_MakeOrkoid_Cultivated</harvestedThingDef>
+       <harvestedThingDef>Plant_OrkFungus</harvestedThingDef> 
+	  <!-- <harvestedThingDef>Mote_MakeOrkoid_Cultivated</harvestedThingDef> -->
 	  <sowTags>
 		<li>Ground</li>
 	  </sowTags>
@@ -89,34 +89,25 @@
       <wildClusterWeight>5</wildClusterWeight>
       <purpose>Food</purpose>
     </plant>
-	<!--
     <comps>
+      <li Class="AdeptusMechanicus.CompProperties_OrkoidSpores">
+		<canspawn>true</canspawn>
+		<spawnwild>false</spawnwild>
+		<spawnChance>0.016</spawnChance>
+		<snotlingChance>0.035</snotlingChance>
+		<grotChance>0.015</grotChance>
+		<orkChance>0.005</orkChance>
+      </li>
+	<!--
       <li Class="CompProperties_Glower">
         <glowRadius>10</glowRadius>
         <glowColor>(5,25,32,0)</glowColor>
       </li>
-    </comps>
 	-->
+    </comps>
 	    <storedConceptLearnOpportunity>OrkoidFungus</storedConceptLearnOpportunity> 
   </ThingDef>
   
-  
-  <ThingDef ParentName="MoteBase">
-    <defName>Mote_MakeOrkoid_Cultivated</defName>
-    <thingClass>AdeptusMechanicus.OrkGetPawnThing</thingClass>
-    <graphicData>
-      <texPath>Things/Mote/Bombardment</texPath>
-      <shaderType>MoteGlow</shaderType>
-    </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <drawOffscreen>true</drawOffscreen>
-    <mote>
-      <fadeInTime>0.01</fadeInTime>
-      <solidTime>0.01</solidTime>
-      <fadeOutTime>0.01</fadeOutTime>
-    </mote>
-  </ThingDef>
-
   <ThingDef ParentName="OrkoidPlantBase">
 	<defName>Plant_OrkoidCocoon</defName>
 	<label>Orkoid Fungal Cocoon</label>
@@ -126,7 +117,7 @@
 	</graphicData>
 	<plant>
 	  <immatureGraphicPath>Things/Plants/Orkoid_Cocoon_Immature</immatureGraphicPath>
-	  <harvestedThingDef>Mote_MakeOrkoid_Wild</harvestedThingDef>
+	  <harvestedThingDef>Plant_OrkFungus</harvestedThingDef>
       <growDays>30</growDays>
 	  <sowTags>
 	  <!--
@@ -135,40 +126,44 @@
 		-->
 	  </sowTags>
 	</plant>
+    <comps>
+      <li Class="AdeptusMechanicus.CompProperties_OrkoidSpores">
+		<canspawn>true</canspawn>
+		<spawnwild>true</spawnwild>
+		<spawnChance>0.5</spawnChance>
+		<snotlingChance>0.45</snotlingChance>
+		<grotChance>0.25</grotChance>
+		<orkChance>0.15</orkChance>
+      </li>
+	<!--
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(5,25,32,0)</glowColor>
+      </li>
+	-->
+    </comps>
   </ThingDef>
   
-  <ThingDef ParentName="MoteBase">
-    <defName>Mote_MakeOrkoid_Wild</defName>
-    <thingClass>AdeptusMechanicus.OrkGetPawnThingWild</thingClass>
-    <graphicData>
-      <texPath>Things/Mote/Bombardment</texPath>
-      <shaderType>MoteGlow</shaderType>
-    </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <drawOffscreen>true</drawOffscreen>
-    <mote>
-      <fadeInTime>0.01</fadeInTime>
-      <solidTime>0.01</solidTime>
-      <fadeOutTime>0.01</fadeOutTime>
-    </mote>
-  </ThingDef>
-
   <ThingDef ParentName="PlantFoodRawBase">
     <defName>Plant_OrkFungus</defName>
     <label>orkoid fungus</label>
     <description>Raw orkoid fungus.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/RawFungus</texPath>
+      <texPath>Things/Item/Resource/PlantFoodRaw/OrkRawFungus</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
     </statBases>
     <ingestible>
-      <foodType>VegetableOrFruit</foodType>
+		<foodType>Meat, VegetableOrFruit</foodType>
+		<tasteThought>AteOrkMeal</tasteThought>
+		<specialThoughtDirect>AteOrkFungusDirect</specialThoughtDirect>
+		<specialThoughtAsIngredient>AteOrkFungusAsIngredient</specialThoughtAsIngredient>
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>30</daysToRotStart>
+        <daysToRotStart>5</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>

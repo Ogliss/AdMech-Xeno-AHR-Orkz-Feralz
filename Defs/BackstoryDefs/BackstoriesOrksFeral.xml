@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!-- Ork Childhood -->
-<!-- Ork Child Base -->
-  <AlienRace.BackstoryDef>
-    <defName>Ork_Base_Child</defName>
-    <title>Runt</title>
-    <baseDescription>[PAWN_nameDef] is Ork. As such, war is his only passion, with most basic menial tasks being performed only to fuel the warmachine.</baseDescription>
-    <bodyTypeGlobal>Thin</bodyTypeGlobal>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Thin</bodyTypeFemale>
-	<slot>Childhood</slot>
+<!-- Orkoid Backstories -->
+<!-- Orkoid Base -->
+  <AlienRace.BackstoryDef Name="Orkoid_Base_Backstory" Abstract="true">
     <workDisables>
-      <li>Cleaning</li>
-      <li>Artistic</li>
+	
     </workDisables>
 	<disallowedTraits>
 		<li>
@@ -33,10 +25,60 @@
 		</li>
     </disallowedTraits>
 	<forcedTraits>
+	
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Orkoid</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  
+  
+<!-- Orkz -->
+<!-- Ork Base -->
+  <AlienRace.BackstoryDef Name="Ork_Base" Abstract="true" ParentName="Orkoid_Base_Backstory">
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <workDisables>
+	
+    </workDisables>
+	<disallowedTraits>
+	
+    </disallowedTraits>
+	<forcedTraits>
 		<li>
 			<defName>Tough</defName>
 			<chance>50</chance>
 		</li>
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Ork</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<!-- Ork Childhood -->
+<!-- Ork Child Base -->
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
+    <defName>Ork_Base_Child</defName>
+    <title>Yoof</title>
+    <baseDescription>[PAWN_nameDef] is Ork. As such, war is his only passion, with most basic menial tasks being performed only to fuel the warmachine.</baseDescription>
+	<slot>Childhood</slot>
+    <workDisables>
+      <li>Cleaning</li>
+      <li>Artistic</li>
+    </workDisables>
+	<disallowedTraits>
+	
+    </disallowedTraits>
+	<forcedTraits>
+	
     </forcedTraits>
     <skillGains>
       <li>
@@ -85,6 +127,7 @@
       </li>
     </skillGains>
     <spawnCategories>
+      <li>Ork_Base_Child</li>
       <li>Ork_Standard</li>
       <li>Ork_Boy</li>
       <li>Ork_Nob</li>
@@ -95,7 +138,7 @@
 <!-- Ork Adulthood -->
 <!-- Ork Boyz -->
 <!-- Ork Boy Shoota -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Boy_Shoota</defName>
     <title>sharpshooter</title>
     <titleShort>Snipa</titleShort>
@@ -139,7 +182,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Boy Slugga -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Boy_Slugga</defName>
     <title>Slugga</title>
     <titleShort>Slugga</titleShort>
@@ -184,7 +227,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Boy Choppa -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Boy_Choppa</defName>
     <title>Choppa</title>
     <titleShort>Choppa</titleShort>
@@ -228,7 +271,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Boy Brewer -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Orkoid_Base_Backstory">
     <defName>Ork_Boy_Brewer</defName>
     <title>Brewer</title>
     <titleShort>Brewer</titleShort>
@@ -256,7 +299,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Boy Shouta -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Orkoid_Base_Backstory">
     <defName>Ork_Boy_Shouter</defName>
     <title>Shouta</title>
     <titleShort>Shouta</titleShort>
@@ -290,7 +333,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Boy Herda -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Orkoid_Base_Backstory">
     <defName>Ork_Boy_Herda</defName>
     <title>Herda</title>
     <titleShort>Herda</titleShort>
@@ -318,7 +361,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Boy Mad -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Boy_Mad</defName>
     <title>Madboy</title>
     <titleShort>Madboy</titleShort>
@@ -360,7 +403,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Boy Doc -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Boy_Doc</defName>
     <title>Mad doc</title>
     <titleShort>Mad doc</titleShort>
@@ -403,7 +446,7 @@
 
 <!-- Ork Nobz -->
 <!-- Ork Nob Crusher --> 
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Nob_Crusher</defName>
     <title>Crusher</title>
     <titleShort>Crusher</titleShort>
@@ -450,7 +493,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Nob Flash -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Nob_Flash</defName>
     <title>Flash Git</title>
     <titleShort>Flash</titleShort>
@@ -502,7 +545,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Ork Nob Devastator -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Nob_Devastator</defName>
     <title>Devistata</title>
     <titleShort>Devistata</titleShort>
@@ -555,7 +598,7 @@
 
 <!-- Ork Bosses -->
 <!-- Ork Boss -->
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Ork_Base">
     <defName>Ork_Boss_Nob</defName>
     <title>Boss</title>
     <titleShort>Boss</titleShort>
@@ -605,7 +648,7 @@
 <!-- Weird Child -->
    <AlienRace.BackstoryDef>
     <defName>Ork_Weird_Child</defName>
-    <title>Weird Runt</title>
+    <title>Weird Yoof</title>
     <baseDescription>[PAWN_nameDef] is Ork. As such, war is his only passion, with most basic menial tasks being performed only to fuel the warmachine.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
@@ -851,21 +894,20 @@
   </AlienRace.BackstoryDef>
   
 <!-- Grotz -->
-<!-- Grot Childhood -->
-<!-- Grot Child -->
-  <AlienRace.BackstoryDef>
-    <defName>Grot_Base_Child</defName>
-    <title>Grotling</title>
-    <titleShort>Grotling</titleShort>
-    <baseDescription>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDescription>
+<!-- Grot Base -->
+  <AlienRace.BackstoryDef Name="Grot_Base" Abstract="true" ParentName="Orkoid_Base_Backstory">
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
-    <slot>Childhood</slot>
     <workDisables>
-      <li>Intellectual</li>
+	
     </workDisables>
+	<disallowedTraits>
+	
+    </disallowedTraits>
 	<forcedTraits>
+	<!--
+	
         <li>
             <defName>Nerves</defName>
 			<degree>-1</degree>
@@ -876,15 +918,41 @@
 			<degree>2</degree>
             <chance>25</chance>
         </li>
+	-->
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Grot_Gretchin</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+<!-- Grot Childhood -->
+<!-- Grot Child -->
+  <AlienRace.BackstoryDef ParentName="Grot_Base">
+    <defName>Grot_Base_Child</defName>
+    <title>runt</title>
+    <titleShort>runt</titleShort>
+    <baseDescription>[PAWN_nameDef] is a Grotling, an infantile Gretchin, often confused with Snotlings, barely suitable for menial tasks.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+	<forcedTraits>
+	
     </forcedTraits>
     <skillGains>
       <li>
         <defName>Shooting</defName>
-        <amount>-2</amount>
+        <amount>-1</amount>
       </li>
       <li>
         <defName>Melee</defName>
-        <amount>-2</amount>
+        <amount>-1</amount>
       </li>
       <li>
         <defName>Construction</defName>
@@ -924,15 +992,41 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Grot_Gretchin</li>
+      <li>Grot_Base_Child</li>
       <li>Grot_Slave</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
 <!-- Grot Adulthood -->
 <!-- Grot Slave -->
-  <AlienRace.BackstoryDef>
-    <defName>Grot_Base</defName>
+  <AlienRace.BackstoryDef ParentName="Grot_Base">
+    <defName>Grot_Base_Adult</defName>
+    <title>Grot Slave</title>
+    <titleShort>Slave</titleShort>
+	<linkedBackstory>Grot_Base_Child</linkedBackstory>
+    <baseDescription>[PAWN_nameDef] is a Grot, the backbone of Ork society. Most menial tasks are performed by [PAWN_pronoun] kind.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-1</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Grot_Slave</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+<!-- Grot Slave -->
+  <AlienRace.BackstoryDef ParentName="Grot_Base">
+    <defName>Grot_Slave</defName>
     <title>Grot Slave</title>
     <titleShort>Slave</titleShort>
 	<linkedBackstory>Grot_Base_Child</linkedBackstory>
@@ -958,7 +1052,7 @@
   </AlienRace.BackstoryDef>
 
 <!-- Grot Orderly -->    
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Grot_Base">
     <defName>Grot_Orderly</defName>
     <title>Grot orderly</title>
     <titleShort>Orderly</titleShort>
@@ -986,13 +1080,12 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Grot_Gretchin</li>
       <li>Grot_Doc</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 
 <!-- Grot Tinkerer --> 
-  <AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef ParentName="Grot_Base">
     <defName>Grot_Tinkerer</defName>
     <title>Grot Tinkerer</title>
     <titleShort>Tinkerer</titleShort>
@@ -1021,9 +1114,40 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Grot_Gretchin</li>
       <li>Grot_Tek</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
  
+<!-- Grot Psyker --> 
+  <AlienRace.BackstoryDef>
+    <defName>Weird_Grot</defName>
+    <title>Odd git Gobbo</title>
+    <titleShort>Tinkerer</titleShort>
+	<linkedBackstory>Grot_Base_Child</linkedBackstory>
+    <baseDescription>[PAWN_nameDef] is a Tinkerer. With an knack for knowing which bitz go where when it comes to teknology.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+      <li>Cooking</li>
+      <li>Animals</li>
+      <li>Mining</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Werird_Grot</li>
+      <li>Grot_Tek</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
 </Defs>

@@ -16,3 +16,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz Feralz Only\Source\AdeptusMechanicusOrkz\obj\Debug\AdeptusMechanicusOrkz.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz Feralz Only\Assemblies\AdeptusMechanicusOrkz.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz Feralz Only\Assemblies\AdeptusMechanicusOrkz.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\Assemblies\AdeptusMechanicusOrkz.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\Assemblies\AdeptusMechanicusOrkz.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\Source\AdeptusMechanicusOrkz\obj\Debug\AdeptusMechanicusOrkz.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\Source\AdeptusMechanicusOrkz\obj\Debug\AdeptusMechanicusOrkz.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\Source\AdeptusMechanicusOrkz\obj\Debug\AdeptusMechanicusOrkz.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\Source\AdeptusMechanicusOrkz\obj\Debug\AdeptusMechanicusOrkz.pdb

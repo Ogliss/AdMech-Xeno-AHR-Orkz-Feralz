@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef Name="BaseFeralOrkFaction">
+  <FactionDef>
 		<defName>FeralOrkFaction</defName>
 		<label>feral ork warband</label>
     <description>Feral Orks or Wildboyz are Orks who arise on a world that a spaceborne Ork WAAAGH! has already assaulted, though they possess only pre-industrial levels of technology and culture. Feral Orks appear after a WAAAGH! has already infested a planet and then moved on to seek new battles elsewhere. Usually Feral Orks are a new generation of Orks grown from the fungal reproductive spores released by spaceborne Orks and left behind on the world their spaceborne counterparts have abandoned.\n\nFeral Orks can also be derived from an original population of spaceborne Orks stranded on a world who effectively devolve back to a feral state, losing their access to more advanced technology. The Feral Orks, while less advanced than their fellow Greenskins, do have access to a variety of wargear in their armoury. However, much of it works due to the strange effects it has on the mind and behaviour of the Ork, rather than actually producing a physical effect upon the enemy.</description>
@@ -13,7 +13,7 @@
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>false</canSiege>
     <canStageAttacks>true</canStageAttacks>
-    <leaderTitle>Feral Warboss</leaderTitle>
+    <leaderTitle>feral Warboss</leaderTitle>
     <startingGoodwill>
       <min>-100</min>
       <max>0</max>
@@ -25,7 +25,7 @@
 			<li>Ork_Boss</li>
 			<li>Ork_Nob</li>
 			<li>Ork_Standard</li>
-			<li>Ork_Gretchin</li>
+			<li>Grot_Gretchin</li>
   	</backstoryCategories>
 			<hairTags>
 		<li>OrkHair</li>
@@ -63,10 +63,10 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <AttackSquig>50</AttackSquig>
           <FeralGrotSlave>10</FeralGrotSlave>
           <FeralGrotColonist>5</FeralGrotColonist>
           <FeralOrkRuntBoy>9</FeralOrkRuntBoy>
+          <FeralOrkWarboss>1</FeralOrkWarboss>
           <FeralOrkBoss>2</FeralOrkBoss>
           <FeralOrkChoppaBoy>10</FeralOrkChoppaBoy>
           <FeralOrkSluggaBoy>10</FeralOrkSluggaBoy>
@@ -83,12 +83,14 @@
           <FeralOrkWeirdBoy>3</FeralOrkWeirdBoy>
           <FeralOrkWeirdNob>2</FeralOrkWeirdNob>
           <FeralOrkWeirdBoss>1</FeralOrkWeirdBoss>
+          <AttackSquig>10</AttackSquig>
         </options>
       </li>
         <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <AttackSquig>50</AttackSquig>
+          <FeralOrkWarboss>10</FeralOrkWarboss>
+          <AttackSquig>5</AttackSquig>
           <FeralGrotColonist>10</FeralGrotColonist>
           <FeralOrkRuntBoy>9</FeralOrkRuntBoy>
           <FeralOrkBoss>1</FeralOrkBoss>
@@ -108,10 +110,11 @@
         </traders>
         <carriers>
           <Muffalo>2</Muffalo>
-          <Squig>8</Squig>
           <Dromedary>2</Dromedary>
         </carriers>
         <guards>
+          <FeralOrkWarboss>10</FeralOrkWarboss>
+          <AttackSquig>5</AttackSquig>
           <FeralGrotSlave>13</FeralGrotSlave>
           <FeralOrkRuntBoy>9</FeralOrkRuntBoy>
           <FeralOrkChoppaBoy>10</FeralOrkChoppaBoy>
@@ -131,7 +134,8 @@
 	  <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <AttackSquig>50</AttackSquig>
+          <FeralOrkWarboss>10</FeralOrkWarboss>
+          <AttackSquig>5</AttackSquig>
           <FeralGrotSlave>13</FeralGrotSlave>
           <FeralGrotColonist>5</FeralGrotColonist>
           <FeralOrkRuntBoy>9</FeralOrkRuntBoy>
@@ -148,6 +152,7 @@
           <FeralOrkWeirdBoy>3</FeralOrkWeirdBoy>
           <FeralOrkWeirdNob>2</FeralOrkWeirdNob>
           <FeralOrkWeirdBoss>1</FeralOrkWeirdBoss>
+		  
         </options>
       </li>
     </pawnGroupMakers>
