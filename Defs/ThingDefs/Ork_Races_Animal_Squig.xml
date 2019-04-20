@@ -163,6 +163,6 @@
   <PawnKindDef Name="AttackSquig" ParentName="Squig">
     <defName>AttackSquig</defName>
     <race>AttackSquig</race>
-	<defaultFactionType>OrkFaction</defaultFactionType>
+	<defaultFactionType>FeralOrkFaction</defaultFactionType>
   </PawnKindDef>
 </Defs>

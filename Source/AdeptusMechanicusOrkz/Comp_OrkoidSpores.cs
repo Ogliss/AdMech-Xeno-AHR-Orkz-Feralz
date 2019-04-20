@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using AlienRace;
 
 namespace AdeptusMechanicus
 {
@@ -34,25 +35,87 @@ namespace AdeptusMechanicus
             }
         }
 
+        public Plant plant
+        {
+            get
+            {
+                return base.parent as Plant;
+            }
+        }
+
+        public bool canspawn
+        {
+            get
+            {
+                return plant.HarvestableNow && Props.canspawn;
+            }
+        }
+
+        public bool spawnwild
+        {
+            get
+            {
+                return Props.spawnwild;
+            }
+        }
+
+        public float spawnChance
+        {
+            get
+            {
+                return Props.spawnChance;
+            }
+        }
+
+        public float snotlingChance
+        {
+            get
+            {
+                return Props.snotlingChance;
+            }
+        }
+
+        public float grotChance
+        {
+            get
+            {
+                return Props.grotChance;
+            }
+        }
+
+        public float orkChance
+        {
+            get
+            {
+                return Props.orkChance;
+            }
+        }
+
+        public float age
+        {
+            get
+            {
+                if (pawnKindDef.RaceProps.Humanlike)
+                {
+                    return 16.5f;
+                }
+                else return 0f;
+            }
+            set
+            {
+
+            }
+        }
+
         public override void PostDeSpawn(Map map)
         {
-            Faction faction;
-            PawnGenerationContext generationContext;
-            bool canspawn = Props.canspawn;
-            bool spawnwild = Props.spawnwild;
-            float spawnChance = Props.spawnChance;
-            float snotlingChance = Props.snotlingChance;
-            float grotChance = Props.grotChance;
-            float orkChance = Props.orkChance;
-            int age = 0;
-            PawnKindDef pawnKindDef;
             base.PostDeSpawn(map);
         //   Log.Message(string.Format("canspawn {0}", canspawn));
             if (canspawn == true)
             {
                 var spawnRoll = Rand.Value;
             //   Log.Message(string.Format("rolled {0} needs less than {1} to spawn", spawnRoll, spawnChance));
-                if (spawnRoll < spawnChance)
+                if (spawnRoll < (spawnChance*plant.Growth))
                 {
                     spawnRoll = Rand.Value;
                     if (spawnRoll < snotlingChance & spawnRoll > grotChance)
@@ -62,12 +125,12 @@ namespace AdeptusMechanicus
                     else if (spawnRoll < grotChance & spawnRoll > orkChance)
                     {
                         pawnKindDef = OGOrkPawnKindDefOf.WildGrot;
-                        age = 16;
+                        //age = 16;
                     }
                     else if (spawnRoll < orkChance)
                     {
                         pawnKindDef = OGOrkPawnKindDefOf.WildOrk;
-                        age = 16;
+                        //age = 16;
                     }
                     else
                     {
@@ -84,13 +147,25 @@ namespace AdeptusMechanicus
                         faction = Faction.OfPlayer;
                         generationContext = PawnGenerationContext.PlayerStarter;
                     }
+                    if (pawnKindDef.RaceProps.Humanlike)
+                    {
+                     //   age = pawnKindDef.RaceProps.lifeStageAges.First(x => x.def.defName.Contains("Adult")).minAge - 0.5f;
+                    }
                     PawnGenerationRequest pawnGenerationRequest = new PawnGenerationRequest(pawnKindDef, faction, generationContext, -1, true, false, false, false, true, true, 20f, fixedGender: Gender.Male, fixedBiologicalAge: age, fixedChronologicalAge: age);
                     Pawn pawn = PawnGenerator.GeneratePawn(pawnGenerationRequest);
-                    //pawn.ageTracker.AgeBiologicalTicks = 70000000L;
+                    
+                    if (pawn.kindDef==OGOrkPawnKindDefOf.WildOrk)
+                    {
+                        pawn.story.childhood.identifier = "Ork_Base_Child";
+                    }
+                    else if (pawn.kindDef==OGOrkPawnKindDefOf.WildGrot)
+                    {
+                        pawn.story.childhood.identifier = "Grot_Base_Child";
+                    }
                     if (spawnwild && pawnKindDef != OGOrkPawnKindDefOf.Snotling && pawnKindDef != OGOrkPawnKindDefOf.Squig)
                     {
-                    //   Log.Message(string.Format("changing {0} to wildman", pawnKindDef));
-                        pawn.ChangeKind(PawnKindDefOf.WildMan);
+                        //   Log.Message(string.Format("chang0ing {0} to wildman", pawnKindDef));
+                            pawn.ChangeKind(PawnKindDefOf.WildMan);
                     }
                     else if (!spawnwild && Faction.OfPlayer.def == OGOrkFactionDefOf.OrkPlayerColonyTribal && pawnKindDef != OGOrkPawnKindDefOf.Snotling && pawnKindDef != OGOrkPawnKindDefOf.Squig)
                     {
@@ -102,6 +177,11 @@ namespace AdeptusMechanicus
             }
         }
 
+        public PawnKindDef pawnKindDef;
+
+        public Faction faction;
+
+        public PawnGenerationContext generationContext;
     }
  
 }

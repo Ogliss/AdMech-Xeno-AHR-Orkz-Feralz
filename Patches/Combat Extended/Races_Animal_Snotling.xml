@@ -3,23 +3,34 @@
 
 	<!-- ========== Snotling ========== -->
 
-	<Operation Class="PatchOperationAddModExtension">
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationTest">
+      <xpath>Defs/ResearchTabDef[defName="CE_Turrets"]</xpath>
+    </li>
+    <li Class="PatchOperationTest">
+      <xpath>Defs/ThingDef[defName="Snotling"]/statBases/MeleeParryChance</xpath>
+		<success>Invert</success>
+    </li>
+
+	<li Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="Snotling"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Humanoid</bodyShape>
 			</li>
 		</value>
-	</Operation>
+	</li>
 
-	<Operation Class="PatchOperationReplace">
+	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Snotling"]/statBases/MoveSpeed</xpath>
 		<value>
 			<MoveSpeed>3.75</MoveSpeed>
 		</value>
-	</Operation>
+	</li>
 
-	<Operation Class="PatchOperationAdd">
+	<li Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Snotling"]/statBases</xpath>
 		<value>
 			<ArmorRating_Blunt>0.075</ArmorRating_Blunt>
@@ -28,9 +39,9 @@
 			<MeleeCritChance>0.20</MeleeCritChance>
 			<MeleeParryChance>0.09</MeleeParryChance>
 		</value>
-	</Operation>
+	</li>
 
-	<Operation Class="PatchOperationReplace">
+	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Snotling"]/tools</xpath>
 		<value>
 			<tools>
@@ -101,14 +112,16 @@
 				</li>
 			</tools>
 		</value>
-	</Operation>
+	</li>
 
-	<Operation Class="PatchOperationReplace">
+	<li Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Snotling"]/race/baseHealthScale</xpath>
 		<value>
 			<baseHealthScale>1.0</baseHealthScale>
 		</value>
-	</Operation>
+	</li>
+  </operations>
+</Operation>
 
 </Patch>
 

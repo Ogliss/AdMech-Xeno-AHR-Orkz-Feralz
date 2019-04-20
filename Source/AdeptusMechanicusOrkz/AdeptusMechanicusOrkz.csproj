@@ -35,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comp_OrkoidSpores.cs" />
+    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="IncidentWorker_OrkoidFungalSprout.cs" />
     <Compile Include="OGOrkPawnKindDefOf.cs" />
     <Compile Include="OGOrkFactionDefOf.cs" />
@@ -42,6 +43,13 @@
     <Compile Include="OGOrkThingDefOf.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\AdMechArmoury\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\839005762\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>

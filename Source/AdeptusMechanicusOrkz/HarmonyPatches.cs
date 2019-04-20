@@ -1,66 +1,64 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using Harmony;
 using RimWorld;
 using Verse;
-using Verse.Sound;
 using Verse.AI;
-using Verse.AI.Group;
-using Harmony;
-using RimWorld.Planet;
-using System.Reflection.Emit;
-using System.Reflection;
-using UnityEngine;
-
 
 namespace AdeptusMechanicus
 {
-
     [StaticConstructorOnStartup]
-    static class HarmonyPatches
+    public static class HarmonyPatches
     {
+        private static readonly Type patchType = typeof(HarmonyPatches);
         static HarmonyPatches()
         {
-            HarmonyInstance harmony = HarmonyInstance.Create("Ogliss.RimWorld.XenoBiologis.Orkz");
-            HarmonyInstance.DEBUG = true;
+            var harmony = HarmonyInstance.Create("rimworld.ogliss.adeptusmechanicus.orkz");
 
-            harmony.Patch(AccessTools.Method(typeof(WildManUtility), nameof(WildManUtility.IsWildMan)),
-                new HarmonyMethod(typeof(HarmonyPatches), nameof(WildManUtilityFix)), null, null);
+            harmony.Patch(
+                original: AccessTools.Method(type: typeof(FoodUtility), name: "AddFoodPoisoningHediff"),
+                prefix: new HarmonyMethod(type: patchType, name: nameof(Pre_AddFoodPoisoningHediff_Orkoid)),
+                postfix: null);
         }
 
-        #region WildManUtility
-        // From
-        /* Target Method WildManUtility.IsWildMan
-        public static bool IsWildMan(this Pawn p)
+        public static bool Pre_AddFoodPoisoningHediff_Orkoid(Pawn pawn, Thing ingestible, FoodPoisonCause cause)
         {
-            return p.kindDef == PawnKindDefOf.WildMan;
+        //    Log.Message(string.Format("checkin if {0} can get food poisioning from {1} because {2}", pawn.Name, ingestible ,cause));
+            if (pawn.kindDef.race == OGOrkThingDefOf.Alien_Ork || pawn.kindDef.race == OGOrkThingDefOf.Alien_Grot || pawn.kindDef.race == OGOrkThingDefOf.Cyborg_Ork || pawn.kindDef.race == OGOrkThingDefOf.Snotling || pawn.kindDef.race == OGOrkThingDefOf.Squig || pawn.kindDef.race == OGOrkThingDefOf.AttackSquig)
+            {
+                if (ingestible.def.ingestible.foodType == FoodTypeFlags.Meat)
+                {
+        //            Log.Message(string.Format("stopped {0} getting food poisioning from {1} because {2}", pawn.Name, ingestible, ingestible.def.ingestible.foodType));
+                    return false;
+                }
+                if (cause == FoodPoisonCause.DangerousFoodType)
+                {
+        //            Log.Message(string.Format("stopped {0} getting food poisioning from {1} because {2}", pawn.Name, ingestible, cause));
+                    return false;
+                }
+            }
+            return true;
         }
-        */
-        // to
         /*
-        if (p.kindDef == OGOrkPawnKindDefOf.WildGrot)
+        
+        public static bool Pre_AddFoodPoisoningHediff_Orkoid(Pawn pawn, Thing ingestible, FoodPoisonCause cause)
         {
-            return p.kindDef == OGOrkPawnKindDefOf.WildGrot;
-        }
-        else if(p.kindDef == OGOrkPawnKindDefOf.WildOrk)
-        {
-            return p.kindDef == OGOrkPawnKindDefOf.WildOrk;
-        }
-        else return p.kindDef == PawnKindDefOf.WildMan;
-         */
+        //    Log.Message(string.Format("checkin if {0} can get food poisioning from {1} because {2}", pawn.Name, ingestible ,cause));
+            if (pawn.kindDef.race == OGOrkThingDefOf.Alien_Ork || pawn.kindDef.race == OGOrkThingDefOf.Alien_Grot || pawn.kindDef.race == OGOrkThingDefOf.Cyborg_Ork || pawn.kindDef.race == OGOrkThingDefOf.Snotling || pawn.kindDef.race == OGOrkThingDefOf.Squig || pawn.kindDef.race == OGOrkThingDefOf.AttackSquig)
+            {
+                if (ingestible.def.ingestible.foodType == FoodTypeFlags.Meat)
+                {
+        //            Log.Message(string.Format("stopped {0} getting food poisioning from {1} because {2}", pawn.Name, ingestible, ingestible.def.ingestible.foodType));
+                    return false;
+                }
+                if (cause == FoodPoisonCause.DangerousFoodType)
+                {
+        //            Log.Message(string.Format("stopped {0} getting food poisioning from {1} because {2}", pawn.Name, ingestible, cause));
+                    return false;
+                }
+            }
+            return true;
+        }  
 
-        private static bool WildManUtilityFix(this Pawn p, ref bool __result)
-        {
-            if (p.kindDef == OGOrkPawnKindDefOf.WildGrot)
-            {
-                return p.kindDef == OGOrkPawnKindDefOf.WildGrot;
-            }
-            if (p.kindDef == OGOrkPawnKindDefOf.WildOrk)
-            {
-                return p.kindDef == OGOrkPawnKindDefOf.WildOrk;
-            }
-            else return p.kindDef == PawnKindDefOf.WildMan;
-        }
-        #endregion
-    }   
+        */
+    }
 }
