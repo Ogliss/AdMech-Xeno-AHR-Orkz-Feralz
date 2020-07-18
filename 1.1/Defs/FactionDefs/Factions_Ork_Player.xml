@@ -15,16 +15,12 @@
 		<backstoryFilters>
 		  <li>
 			<categories>
-				<li>Ork_Boss</li>
-				<li>Ork_Nob</li>
-				<li>Ork_Standard</li>
-				<li>Grot_Gretchin</li>
 				<li>Tribal</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Ork/Icon_Ork_FeralB</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_OrkB</factionIconPath>
     <startingResearchTags>
       <li>TribalStart</li>
       <li>TribalStart_Ork</li>
@@ -83,16 +79,12 @@
 		<backstoryFilters>
 		  <li>
 			<categories>
-				<li>Ork_Boss</li>
-				<li>Ork_Nob</li>
-				<li>Ork_Standard</li>
-				<li>Grot_Gretchin</li>
 				<li>Tribal</li>
 			</categories>
 		  </li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-    <factionIconPath>Icons/Ork/Icon_Ork_FeralB</factionIconPath>
+    <factionIconPath>Icons/Ork/Icon_OrkB</factionIconPath>
     <startingResearchTags>
       <li>TribalStart</li>
       <li>TribalStart_Ork</li>

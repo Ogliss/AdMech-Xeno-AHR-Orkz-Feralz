@@ -41,7 +41,6 @@
     <Compile Include="ExtentionMethods\Listing_StandardExtensions.cs" />
     <Compile Include="ExtentionMethods\DamageDefExtensions.cs" />
     <Compile Include="ExtentionMethods\PawnExtensions.cs" />
-    <Compile Include="Harmony\Class1.cs" />
     <Compile Include="ToolUserPskyerDefExtension.cs" />
     <Compile Include="CompForceWeaponActivatableEffect.cs" />
     <Compile Include="CompAlwaysActivatableEffect.cs" />

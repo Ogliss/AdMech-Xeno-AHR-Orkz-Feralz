@@ -179,12 +179,17 @@ namespace FeralOrkz
                 BackstoryCategoryFilter backstoryCategoryFilter = backstoryCategories.RandomElementByWeight((BackstoryCategoryFilter c) => c.commonality);
                 backstoryCategories.Clear();
                 backstoryCategories.Add(backstoryCategoryFilter);
+            //    Log.Message(pawn.LabelShortCap + " BackstoryExtension using "+ backstoryCategoryFilter.categories.ToCommaList());
+            }
+            else
+            {
+            //    Log.Message(pawn.LabelShortCap + " No BackstoryExtension");
             }
             if (pawn.health.hediffSet.hediffs.Any(x => x.def.defName.Contains("TM_") && (x.def.defName.Contains("Undead") || x.def.defName.Contains("Lich"))))
             {
                 return true;
             }
-            if (pawn.ageTracker.AgeBiologicalYears < 20 && (pawn.def.defName.StartsWith("OG_") || pawn.kindDef.defName.StartsWith("OG_")))
+            if ((pawn.ageTracker.AgeBiologicalYears < 20 && (pawn.def.defName.StartsWith("OG_") || pawn.kindDef.defName.StartsWith("OG_"))) || ext)
             {
                 //    Log.Message(string.Format("AdMech mod pawn: {0} {1} {2}",pawn.NameShortColored, pawn.kindDef, pawn.def.modContentPack.PackageIdPlayerFacing));
                 bool act = pawn.RaceProps.lifeStageAges.Any(x => x.def.reproductive);
@@ -208,14 +213,13 @@ namespace FeralOrkz
         {
             if (pawn.def.defName.StartsWith("OG_"))
             {
-                //    log.message(pawn.NameShortColored + " is " +pawn.def + " in " + pawn.Faction);
+            //    Log.Message(pawn.NameShortColored + " is " +pawn.def + " in " + pawn.Faction);
                 BackstoryCategoryFilter backstoryCategoryFilter = backstoryCategories.RandomElementByWeight((BackstoryCategoryFilter c) => c.commonality);
                 if (backstoryCategoryFilter == null)
                 {
-
-                    //    log.message(pawn.def + " in " + pawn.Faction + " backstoryCategoryFilter == null");
+                //    Log.Message(pawn.def + " in " + pawn.Faction + " backstoryCategoryFilter == null");
                     backstoryCategoryFilter = FallbackCategoryGroup;
-                    //    log.message(pawn.def + " in " + pawn.Faction + " backstoryCategoryFilter == " + backstoryCategoryFilter);
+                //    Log.Message(pawn.def + " in " + pawn.Faction + " backstoryCategoryFilter == " + backstoryCategoryFilter);
                 }
                 List<string> lista = new List<string>();
                 foreach (BackstoryCategoryFilter filter in backstoryCategories)
@@ -232,7 +236,7 @@ namespace FeralOrkz
                       where slot != BackstorySlot.Adulthood || !bs.requiredWorkTags.OverlapsWithOnAnyWorkType(pawn.story.childhood.workDisables)
                       select bs).TryRandomElementByWeight(new Func<Backstory, float>(BackstorySelectionWeight), out backstory))
                 {
-                    //    log.message(string.Format("backstoryCategories: {0}, used backstoryCategoryFilter: {1}", lista.ToCommaList(), backstoryCategoryFilter.categories.ToCommaList()));
+                //    Log.Message(string.Format("backstoryCategories: {0}, used backstoryCategoryFilter: {1}", lista.ToCommaList(), backstoryCategoryFilter.categories.ToCommaList()));
                     Log.Error(string.Concat(new object[]
                     {
                     "No shuffled ",

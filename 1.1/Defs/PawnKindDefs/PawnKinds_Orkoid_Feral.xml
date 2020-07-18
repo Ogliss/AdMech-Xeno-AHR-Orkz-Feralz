@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- ============================ Ork Base ========================== -->
-  <PawnKindDef Name="OG_Orkoid_Base" Abstract="True">
+  <PawnKindDef Name="OG_Orkoid_Feral" Abstract="True">
     <defaultFactionType>OG_Ork_Feral_Faction</defaultFactionType>
     <backstoryFiltersOverride Inherit="False">
       <li>
@@ -16,25 +16,11 @@
     <apparelTags>
       <li>OGOClothing</li>
     </apparelTags>
+    <modExtensions>
+      <li Class="FeralOrkz.BackstoryExtension" />
+    </modExtensions>
   </PawnKindDef>
-  
-  <PawnKindDef Name="OG_Orkoid_Feral" ParentName="OG_Orkoid_Base" Abstract="True">
-    <defaultFactionType>OG_Ork_Feral_Faction</defaultFactionType>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>Ork_Standard</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
-    <chemicalAddictionChance>0.035</chemicalAddictionChance>
-    <baseRecruitDifficulty>1</baseRecruitDifficulty>
-    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-    <apparelTags>
-      <li>OGOClothing</li>
-    </apparelTags>
-  </PawnKindDef>
-  
+
   <!-- ============================ Ork Civilian Base ========================== -->
   <PawnKindDef Name="FeralOrkCivBase" ParentName="OG_Orkoid_Feral" Abstract="True">
     <combatPower>25</combatPower>
@@ -215,9 +201,6 @@
     </backstoryFiltersOverride>
 	<minGenerationAge>60</minGenerationAge>
 	<maxGenerationAge>600</maxGenerationAge>
-    <modExtensions>
-      <li Class="FeralOrkz.BackstoryExtension" />
-    </modExtensions>
   </PawnKindDef>
   
   <!-- ============================ Ork Trader ========================== -->

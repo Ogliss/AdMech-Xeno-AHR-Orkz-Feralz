@@ -25,9 +25,10 @@
 	  <li>Cloak</li>
     </apparelTags>
 	<modExtensions>
+      <li Class="FeralOrkz.BackstoryExtension" />
 	  <li Class="AlienRace.Info">
 		<allowHumanBios>false</allowHumanBios>
-		<maleGenderProbability>0.5</maleGenderProbability>
+		<maleGenderProbability>1</maleGenderProbability>
 	  </li>
 	</modExtensions>
     <backstoryFiltersOverride>
@@ -216,9 +217,10 @@
       </li>
     </backstoryFiltersOverride>
 	<modExtensions>
+      <li Class="FeralOrkz.BackstoryExtension" />
 	  <li Class="AlienRace.Info">
 		<allowHumanBios>false</allowHumanBios>
-		<maleGenderProbability>0.5</maleGenderProbability>
+		<maleGenderProbability>1</maleGenderProbability>
 	  </li>
 	</modExtensions>
   </PawnKindDef>
