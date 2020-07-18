@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase">
+    <defName>OG_Ork_PlayerTribe</defName>
+    <label>Ork Tribal</label>
+    <description>Ork Tribal Start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Tribesperson_OG_Ork</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+    <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+				<li>Ork_Boss</li>
+				<li>Ork_Nob</li>
+				<li>Ork_Standard</li>
+				<li>Grot_Gretchin</li>
+				<li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <factionIconPath>Icons/Ork/Icon_Ork_FeralB</factionIconPath>
+    <startingResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStart_Ork</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <hairTags>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+        <li>Leather_Plain</li>
+        <li>Leather_Squig</li>
+        <li>Leather_Human</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribesperson_OG_Grot>100</Tribesperson_OG_Grot>
+          <Tribesperson_OG_Ork_Boy>100</Tribesperson_OG_Ork_Boy>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+
+  <FactionDef Parent="PlayerFactionBase" Name="OG_Grot_Feral_PlayerFactionBase">
+    <defName>OG_Grot_PlayerTribe</defName>
+    <label>Grot Tribal</label>
+    <description>Grot Tribal Start.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Tribesperson_OG_Grot</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+    <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
+    <techLevel>Neolithic</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+				<li>Ork_Boss</li>
+				<li>Ork_Nob</li>
+				<li>Ork_Standard</li>
+				<li>Grot_Gretchin</li>
+				<li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <factionIconPath>Icons/Ork/Icon_Ork_FeralB</factionIconPath>
+    <startingResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStart_Ork</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>TribalStart</li>
+      <li>TribalStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <hairTags>
+		<li>OrkHair</li>
+		<li>GrotHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+        <li>Leather_Plain</li>
+        <li>Leather_Squig</li>
+        <li>Leather_Human</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(0, 0.437, 0.847)</li>
+    </colorSpectrum>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+		<li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribesperson_OG_Grot>100</Tribesperson_OG_Grot>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>

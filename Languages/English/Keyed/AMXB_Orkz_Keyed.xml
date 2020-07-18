@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-  <!-- Xenobiologis Playable Orkz Mod -->
-  <OGOrk_FungalHarvest_SuccessMessage>found a {0}</OGOrk_FungalHarvest_SuccessMessage>
-  <OGOrk_FungalHarvest_FailMessage>found nothing of interest</OGOrk_FungalHarvest_FailMessage>
-</LanguageData>

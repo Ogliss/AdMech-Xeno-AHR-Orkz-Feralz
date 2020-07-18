@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45E04480-9212-4B79-AB96-555022037B16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FeralOrkz</RootNamespace>
+    <AssemblyName>FeralOrkz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefModExtension\BackstoryExtension.cs" />
+    <Compile Include="FeralOrkzMod.cs" />
+    <Compile Include="FeralOrkzSettings.cs" />
+    <Compile Include="ExtentionMethods\Listing_StandardExtensions.cs" />
+    <Compile Include="ExtentionMethods\DamageDefExtensions.cs" />
+    <Compile Include="ExtentionMethods\PawnExtensions.cs" />
+    <Compile Include="Harmony\Class1.cs" />
+    <Compile Include="ToolUserPskyerDefExtension.cs" />
+    <Compile Include="CompForceWeaponActivatableEffect.cs" />
+    <Compile Include="CompAlwaysActivatableEffect.cs" />
+    <Compile Include="Comp_OrkoidSpores.cs" />
+    <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="IncidentWorker_OrkoidFungalSprout.cs" />
+    <Compile Include="OGOrkPawnKindDefOf.cs" />
+    <Compile Include="OGOrkFactionDefOf.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OGOrkThingDefOf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="1CompActivatableEffect">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\CompActivatableEffect\bin\Debug\1CompActivatableEffect.dll</HintPath>
+    </Reference>
+    <Reference Include="1CompOversizedWeapon">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\CompOversizedWeapon\bin\Debug\1CompOversizedWeapon.dll</HintPath>
+    </Reference>
+    <Reference Include="AdvancedGraphics">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\AdvancedGraphics\bin\Debug\AdvancedGraphics.dll</HintPath>
+    </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.1\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>1.1.2654</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

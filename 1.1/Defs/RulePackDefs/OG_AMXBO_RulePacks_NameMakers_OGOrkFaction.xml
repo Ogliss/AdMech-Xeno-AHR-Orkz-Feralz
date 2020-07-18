@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerFaction_Ork_OG</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[OGOrkClans1] [OGOrkClans2] [OGOrkClans3]</li>
+		  </rulesStrings>
+		  <rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkClans1</keyword>
+				<path>NameBanks/OG_AMXBO_Ork_Clans_A</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkClans2</keyword>
+				<path>NameBanks/OG_AMXBO_Ork_Clans_B</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkClans3</keyword>
+				<path>NameBanks/OG_AMXBO_Ork_Clans_C</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerBases_Ork_OG</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OGOrkBaseNames]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OGOrkBaseNames</keyword>
+					<path>NameBanks/OG_AMXBO_Ork_BaseNames</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPerson_Ork_OG</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[OGOrkFirst] [OGOrkSecond]</li>
+			<li>name->[OGOrkFirst] '[OGOrkFirstB]' [OGOrkSecond]</li>
+			<li>OGOrkFirst->[OGOrkFirstA][OGOrkFirstB]</li>
+		  </rulesStrings>
+			<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstA</keyword>
+				<path>NameBanks/OG_AMXBO_Ork_First_A</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstB</keyword>
+				<path>NameBanks/OG_AMXBO_Ork_First_B</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkSecond</keyword>
+				<path>NameBanks/OGOrkSecond</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerPerson_Grot_OG</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[OGOrkFirst] [OGOrkSecond]</li>
+			<li>name->[OGOrkFirst] '[OGOrkFirstB]' [OGOrkSecond]</li>
+			<li>OGOrkFirst->[OGOrkFirstA][OGOrkFirstB]</li>
+		  </rulesStrings>
+			<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstA</keyword>
+				<path>NameBanks/OG_AMXBO_Ork_First_A</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstB</keyword>
+				<path>NameBanks/OG_AMXBO_Ork_First_B</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkSecond</keyword>
+				<path>NameBanks/OGOrkSecond</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerAnimal_Snotling_OG</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[OGSnotFirst]</li>
+			<li>OGSnotFirst->[OGSnot][OGOrkFirstB]</li>
+		  </rulesStrings>
+			<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstB</keyword>
+				<path>NameBanks/OGOrkFirstB</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGSnot</keyword>
+				<path>NameBanks/OG_AMXBO_Snotling</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerOGOrkFaction</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[OGOrkClans1] [OGOrkClans2] [OGOrkClans3]</li>
+		  </rulesStrings>
+		  <rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkClans1</keyword>
+				<path>NameBanks/OGOrkClans1</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkClans2</keyword>
+				<path>NameBanks/OGOrkClans2</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkClans3</keyword>
+				<path>NameBanks/OGOrkClans3</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerOGOrkBases</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OGOrkBaseNames]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OGOrkBaseNames</keyword>
+					<path>NameBanks/OGOrkBaseNames</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonOrk</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name(p=6)->[OGOrkFirst] [OGOrkSecond]</li>
+			<li>name(p=1)->[OGOrkFirst] '[OGOrkNick]' [OGOrkSecond]</li>
+			<li>OGOrkFirst->[OGOrkFirstA][OGOrkFirstB]</li>
+		  </rulesStrings>
+			<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstA</keyword>
+				<path>NameBanks/OGOrkFirst</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstB</keyword>
+				<path>NameBanks/OGOrkFirstB</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkSecond</keyword>
+				<path>NameBanks/OGOrkSecond</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGOrkNick</keyword>
+				<path>NameBanks/OGOrkNick</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerSnotling</defName>
+		<rulePack>
+		  <rulesStrings>
+			<li>name->[OGSnotFirst]</li>
+			<li>OGSnotFirst->[OGSnot][OGOrkFirstB]</li>
+		  </rulesStrings>
+			<rulesRaw>
+			<li Class="Rule_File">
+				<keyword>OGOrkFirstB</keyword>
+				<path>NameBanks/OGOrkFirstB</path>
+			</li>
+			<li Class="Rule_File">
+				<keyword>OGSnot</keyword>
+				<path>NameBanks/OG_AMXBO_Snotling</path>
+			</li>
+		  </rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
