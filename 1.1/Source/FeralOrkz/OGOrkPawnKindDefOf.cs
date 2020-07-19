@@ -17,8 +17,10 @@ namespace RimWorld
 
         public static PawnKindDef OG_Snotling;
 
-        public static PawnKindDef OG_Grot_Wild;
+        public static PawnKindDef Tribesperson_OG_Grot;
+        public static PawnKindDef Tribesperson_OG_Ork;
 
+        public static PawnKindDef OG_Grot_Wild;
         public static PawnKindDef OG_Ork_Wild; 
     }
 }

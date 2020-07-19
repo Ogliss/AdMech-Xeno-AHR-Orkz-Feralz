@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <FactionDef Parent="PlayerFactionBase" Name="OG_Ork_Feral_PlayerFactionBase">
     <defName>OG_Ork_PlayerTribe</defName>
     <label>Ork Tribal</label>
@@ -127,4 +126,5 @@
       </li>
     </pawnGroupMakers>
   </FactionDef>
+
 </Defs>

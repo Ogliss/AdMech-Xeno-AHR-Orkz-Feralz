@@ -521,11 +521,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Orkz-Feralz\\1.1\\Source\\AdeptusMechanicusOrkz\\FeralOrkz.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Orkz-Feralz\\1.1\\Source\\FeralOrkz\\FeralOrkz.csproj",
       "projectName": "FeralOrkz",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Orkz-Feralz\\1.1\\Source\\AdeptusMechanicusOrkz\\FeralOrkz.csproj",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Orkz-Feralz\\1.1\\Source\\FeralOrkz\\FeralOrkz.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Orkz-Feralz\\1.1\\Source\\AdeptusMechanicusOrkz\\obj\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Orkz-Feralz\\1.1\\Source\\FeralOrkz\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

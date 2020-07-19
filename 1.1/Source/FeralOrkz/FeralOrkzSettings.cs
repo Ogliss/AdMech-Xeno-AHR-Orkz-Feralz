@@ -27,6 +27,12 @@ namespace FeralOrkz
         public float CocoonOrkChance = 0.15f;
         public string CocoonOrkChanceBuffer;
 
+        public FeralOrkzSettings()
+        {
+            FeralOrkzSettings.Instance = this;
+        }
+
+        public static FeralOrkzSettings Instance;
         public override void ExposeData()
         {
             base.ExposeData();
