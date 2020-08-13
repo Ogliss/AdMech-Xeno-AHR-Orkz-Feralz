@@ -1,258 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<AlienRace.RaceSettings>
-    <defName>Ork_Settings</defName>
-    <pawnKindSettings>
-            <alienslavekinds>
-                <li>
-                    <kindDefs>
-						<li>Tribesperson_OG_Grot</li>
-                    </kindDefs>
-                    <chance>40.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Boy</li>
-                    </kindDefs>
-                    <chance>30.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob</li>
-                    </kindDefs>
-                    <chance>20.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Warboss</li>
-                    </kindDefs>
-                    <chance>10.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Weird</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-            </alienslavekinds>
-            <alienrefugeekinds>
-                <li>
-                    <kindDefs>
-						<li>Tribesperson_OG_Grot</li>
-                    </kindDefs>
-                    <chance>40.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork</li>
-                    </kindDefs>
-                    <chance>30.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob</li>
-                    </kindDefs>
-                    <chance>20.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Warboss</li>
-                    </kindDefs>
-                    <chance>10.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Weird</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-            </alienrefugeekinds>
-			<startingColonists>
-				<li>
-				<pawnKindEntries>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork</li>
-						<li>Tribesperson_OG_Grot</li>
-                    </kindDefs>
-                    <chance>80.0</chance>
-					</li>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob</li>
-                    </kindDefs>
-                    <chance>30.0</chance>
-					</li>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Warboss</li>
-                    </kindDefs>
-                    <chance>10.0</chance>
-					</li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Weird</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-				</pawnKindEntries>
-					<factionDefs>
-						<li>OG_Ork_PlayerTribe</li> 
-					</factionDefs>
-				</li>
-				<li>
-				<pawnKindEntries>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Boy</li>
-						<li>Tribesperson_OG_Grot</li>
-                    </kindDefs>
-                    <chance>8.0</chance>
-					</li>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob</li>
-                    </kindDefs>
-                    <chance>3.0</chance>
-					</li>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Warboss</li>
-                    </kindDefs>
-                    <chance>1.0</chance>
-					</li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Weird</li>
-                    </kindDefs>
-                    <chance>0.50</chance>
-                </li>
-				</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerColony</li> 
-					</factionDefs>
-				</li>
-				<li>
-				<pawnKindEntries>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Boy</li>
-						<li>Tribesperson_OG_Grot</li>
-                    </kindDefs>
-                    <chance>8.0</chance>
-					</li>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob</li>
-                    </kindDefs>
-                    <chance>3.0</chance>
-					</li>
-					<li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Warboss</li>
-                    </kindDefs>
-                    <chance>1.0</chance>
-					</li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Weird</li>
-                    </kindDefs>
-                    <chance>0.50</chance>
-                </li>
-				</pawnKindEntries>
-					<factionDefs>
-						<li>PlayerTribe</li> 
-					</factionDefs>
-				</li>
-			</startingColonists>
-            <alienwandererkinds>
-                <li>
-                    <pawnKindEntries>
-                <li>
-                    <kindDefs>
-						<li>Tribesperson_OG_Grot</li>
-                    </kindDefs>
-                    <chance>40.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Boy</li>
-                    </kindDefs>
-                    <chance>30.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Nob</li>
-                    </kindDefs>
-                    <chance>20.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Warboss</li>
-                    </kindDefs>
-                    <chance>10.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-                        <li>Tribesperson_OG_Ork_Weird</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-                    </pawnKindEntries>
-                    <factionDefs>
-						<li>OG_Ork_PlayerTribe</li> 
-                    </factionDefs>
-                </li>
-            </alienwandererkinds>
-        </pawnKindSettings>
-  </AlienRace.RaceSettings>
 
-<ThingDef ParentName="BasePawn" Name="OG_Ork_Pawn_Base" Abstract="True">
-	<!--
-    <thingClass>Pawn</thingClass>
-    <category>Pawn</category>
-    <selectable>true</selectable>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Pawn</altitudeLayer>
-    <useHitPoints>false</useHitPoints>
-    <hasTooltip>true</hasTooltip>
-    <soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
-    <inspectorTabs>
-        <li>ITab_Pawn_Health</li>
-        <li>ITab_Pawn_Needs</li>
-        <li>ITab_Pawn_Character</li>
-        <li>ITab_Pawn_Training</li>
-        <li>ITab_Pawn_Gear</li>
-        <li>ITab_Pawn_Guest</li>
-        <li>ITab_Pawn_Prisoner</li>
-        <li>ITab_Pawn_Social</li>
-        <li>ITab_Pawn_Log</li>
-        <li>ITab_Pawn_FormingCaravan</li>
-    </inspectorTabs>
-    <comps>
-        <li>
-            <compClass>CompAttachBase</compClass>
-        </li>
-    </comps>
-    <drawGUIOverlay>true</drawGUIOverlay>
-	-->
-</ThingDef>
-
-<AlienRace.ThingDef_AlienRace Name="OG_Ork_Race" ParentName="OG_Ork_Pawn_Base" Abstract="True">
-    <label>Ork</label>
-    <description>The pinnacle of the orkoid species: A fully grown Ork.</description>
+<AlienRace.ThingDef_AlienRace Name="OG_Grot_RaceBase" ParentName="OG_Ork_Pawn_Base" Abstract="True">
     <alienRace>
+        <graphicPaths>
+            <li>
+                <body>Things/Pawn/Humanlike/Grot/Bodies/</body>
+                <head>Things/Pawn/Humanlike/Grot/HeadsBase/</head>
+            </li>
+        </graphicPaths>
         <generalSettings>
-            <maleGenderProbability>1</maleGenderProbability>
-            <immuneToAge>false</immuneToAge>
             <forcedRaceTraitEntries>
                 <li>
-                    <defName>Bloodlust</defName>
+                    <defName>Wimp</defName>
                     <degree>0</degree>
-                    <chance>100</chance>
-                </li>
-                <li>
-                    <defName>Tough</defName>
                     <chance>25</chance>
                 </li>
                 <li>
@@ -261,138 +22,19 @@
                     <chance>75</chance>
                 </li>
             </forcedRaceTraitEntries>
-			<disallowedTraits>
-               <li>Kind</li>
-               <li>Gay</li>
-               <li>Wimp</li>
-               <li>DislikesWomen</li>
-               <li>DislikesMen</li>
-            </disallowedTraits>
+            <maleGenderProbability>1</maleGenderProbability>
+            <immuneToAge>false</immuneToAge>
             <alienPartGenerator>
 				<useGenderedHeads>false</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
+				<customDrawSize>(0.75, 0.75)</customDrawSize>
+				<customHeadDrawSize>(0.8, 0.8)</customHeadDrawSize>
                 <aliencrowntypes>
-                    <li>Average_Ork</li>
+                    <li>Average_Gretchin</li>
                 </aliencrowntypes>
-				<customHeadDrawSize>(1.05, 1.05)</customHeadDrawSize>
-				<!-- <customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize> -->
-				<headOffset>(0.0, -0.00)</headOffset>
                 <alienbodytypes>
-					<li>Hulk</li>
-					<li>Male</li>
+                <li>Thin</li>
                 </alienbodytypes>
-				
-				<customDrawSize>(1.25, 1.15)</customDrawSize>
-				<!-- <customPortraitDrawSize>(0.8, 0.8)</customPortraitDrawSize> -->
-				
-				<bodyAddons>
-					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarR</path>
-						<bodyPart>right ear</bodyPart>
-						<inFrontOfBody>true</inFrontOfBody>
-						<layerOffset>0.275</layerOffset>
-						<offsets>
-							<south>
-								<bodyTypes>
-									<Male>(-0.39,0.55)</Male>
-									<Fat>(-0.39,0.55)</Fat>
-									<Hulk>(-0.39,0.55)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Ork>(-0.0,0.0)</Average_Ork>
-								</crownTypes>
-							</south>
-							<north>
-								<bodyTypes>
-									<Male>(0,0.9)</Male>
-									<Fat>(0,0.9)</Fat>
-									<Hulk>(0,0.9)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Ork>(0,0.0)</Average_Ork>
-								</crownTypes>
-							</north>
-							<east>
-								<bodyTypes>
-									<Male>(-0.48,0.6)</Male>
-									<Fat>(-0.48,0.6)</Fat>
-									<Hulk>(-0.48,0.6)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Ork>(-0.0,0.0)</Average_Ork>
-								</crownTypes>
-							</east>
-						</offsets>
-						<useSkinColor>true</useSkinColor>
-						<hiddenUnderApparelFor>
-							<li>OrkFullHead</li>
-							<li>OrkUpperHead</li>
-						</hiddenUnderApparelFor>
-					</li>
-					<li>
-						<path>Things/Pawn/Humanlike/Ork/HeadsBase/Ears/Average_Ork_EarL</path>
-						<bodyPart>left ear</bodyPart>
-						<inFrontOfBody>true</inFrontOfBody>
-						<layerOffset>0.275</layerOffset>
-						<offsets>
-							<south>
-								<bodyTypes>
-									<Male>(-0.42,0.55)</Male>
-									<Fat>(-0.42,0.55)</Fat>
-									<Hulk>(-0.42,0.55)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Ork>(-0.0,0.0)</Average_Ork>
-								</crownTypes>
-							</south>
-							<north>
-								<bodyTypes>
-									<Male>(0,0.9)</Male>
-									<Fat>(0,0.9)</Fat>
-									<Hulk>(0,0.9)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Ork>(0,0.0)</Average_Ork>
-								</crownTypes>
-							</north>
-							<east>
-								<bodyTypes>
-									<Male>(-0.48,0.6)</Male>
-									<Fat>(-0.48,0.6)</Fat>
-									<Hulk>(-0.48,0.6)</Hulk>
-								</bodyTypes>
-								<crownTypes>
-									<Average_Ork>(-0.0,0.0)</Average_Ork>
-								</crownTypes>
-							</east>
-						</offsets>
-						<useSkinColor>true</useSkinColor>
-						<hiddenUnderApparelFor>
-							<li>FullHead</li>
-							<li>UpperHead</li>
-						</hiddenUnderApparelFor>
-					</li>
-				</bodyAddons>
-                <alienskincolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>100</weight>
-							<min>RGBA(0.0,0.329,0.255,1)</min>
-							<max>RGBA(0.388,0.61,0.133,1)</max>
-						</li>
-						<li>
-							<weight>10</weight>
-							<min>RGBA(0.224,0.196,0.133,1)</min>
-							<max>RGBA(0.478,0.451,0.482,1)</max>
-						</li>
-						<li>
-							<weight>1</weight>
-							<min>RGBA(0.4,0.004,0.204,1)</min>
-							<max>RGBA(0.608,0,0.09,1)</max>
-						</li>
-					</options>
-                </alienskincolorgen>
-            <useSkincolorForHair>false</useSkincolorForHair>
             </alienPartGenerator>
 			<chemicalSettings>	
 		    </chemicalSettings>
@@ -500,18 +142,12 @@
 					</goodwill>
 				</li>
 			</factionRelations>
-        </generalSettings>
-        <graphicPaths>
-            <li>
-                <body>Things/Pawn/Humanlike/Ork/Bodies/</body>
-                <head>Things/Pawn/Humanlike/Ork/HeadsBase/</head>
-            </li>
-        </graphicPaths>
+		</generalSettings>
         <hairSettings>
             <hasHair>true</hasHair>
-            <getsGreyAt>300</getsGreyAt> 
+            <getsGreyAt>200</getsGreyAt> 
             <hairTags>
-                 <li>OrkHair</li>
+                 <li>GrotHair</li>
             </hairTags>
         </hairSettings>
         <thoughtSettings>
@@ -556,10 +192,6 @@
                     <replacer>EnvironmentDark_OGOrkoid</replacer> 
                 </li>
                 <li>
-                    <original>Greedy</original>
-                    <replacer>Greedy_OGOrkoid</replacer> 
-                </li>
-                <li>
                     <original>ApparelDamaged</original>
                     <replacer>ApparelDamaged_OGOrkoid</replacer> 
                 </li>
@@ -568,8 +200,8 @@
                     <replacer>DeadMansApparel_OGOrkoid</replacer> 
                 </li>
                 <li>
-                    <original>HumanLeatherApparelSad</original>
-                    <replacer>HumanLeatherApparelSad_OGOrkoid</replacer> 
+                    <original>DeadMansApparel</original>
+                    <replacer>DeadMansApparel_OGOrkoid</replacer> 
                 </li>
                 <li>
                     <original>HumanLeatherApparelHappy</original>
@@ -674,18 +306,15 @@
             </replacerList>
             <restrictedThoughts>
                 <li>EnvironmentDark_OGOrkoid</li>
-                <li>Greedy_OGOrkoid</li>
                 <li>ApparelDamaged_OGOrkoid</li>
                 <li>DeadMansApparel_OGOrkoid</li>
-                <li>HumanLeatherApparelSad_OGOrkoid</li>
                 <li>HumanLeatherApparelHappy_OGOrkoid</li>
                 <li>ButcheredHumanlikeCorpseOpinion_OGOrkoid</li>
                 <li>AteRawHumanlikeMeat_OGOrkoid</li>
                 <li>BrawlerUnhappy_OGOrkoid</li>
                 <li>ColonistLeftUnburied_OGOrkoid</li>
-                <li>AteWithoutTable_OGOrkoid</li>
                 <li>SleptOutside_OGOrkoid</li>
-                <li>SleptOutside_OGOrkoid</li>
+                <li>SleptOnGround_OGOrkoid</li>
                 <li>SleptInCold_OGOrkoid</li>
                 <li>SleptInHeat_OGOrkoid</li>
                 <li>KnowPrisonerSold_OGOrkoid</li>
@@ -726,30 +355,33 @@
 				<li>KnowColonistDied</li>
 				<li>PawnWithGoodOpinionDied</li>
 				-->
-				<li>Pain</li>
+				
 				<li>ApparelDamaged</li>
 				<li>FeelingRandom</li>
 				<li>CabinFever</li>
-				<li>Sick</li>
 				
 				<li>KnowGuestExecuted</li>
 				<li>KnowPrisonerDiedInnocent</li>
+				<li>HumanLeatherApparelSad</li>
+				
 				<li>MySonDied</li>
 				<li>MyBrotherDied</li>
 				<li>MyFatherDied</li>
 				<li>MyNephewDied</li>
+				
 				<li>NeedOutdoors</li>
 				<li>NeedRoomSize</li>
+				
 				<li>NeedBeauty</li>
 				<li>Disfigured</li>
 				<li>Pretty</li>
 				<li>Ugly</li>
 				<li>SoldPrisoner</li>
 				<li>ExecutedPrisoner</li>
-				<li>SleepDisturbed</li>
 				<li>KnowPrisonerSold</li>
 				<li>KnowGuestOrganHarvested</li>
 				<li>SleptInBarracks</li>
+				<li>SleepDisturbed</li>
 				
                 <li>AteOrkMeal</li>
                 <li>AteOrkFungusDirect</li>
@@ -759,7 +391,7 @@
         <relationSettings>
             <relationChanceModifierParent>0</relationChanceModifierParent>
             <relationChanceModifierChild>0</relationChanceModifierChild>
-            <relationChanceModifierSibling>0</relationChanceModifierSibling>
+            <relationChanceModifierSibling>3</relationChanceModifierSibling>
 			
             <relationChanceModifierLover>0</relationChanceModifierLover>
             <relationChanceModifierExLover>0</relationChanceModifierExLover>
@@ -767,6 +399,23 @@
             <relationChanceModifierFiance>0</relationChanceModifierFiance>
             <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
             <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+			   <renamer>
+               <li>
+                  <relation>Sibling</relation>
+                  <label>Mob mate</label>
+                  <femaleLabel>Mob mate</femaleLabel>
+               </li>
+               <li>
+                  <relation>Parent</relation>
+                  <label>Kult leader</label>
+                  <femaleLabel>Kult leader</femaleLabel>
+               </li>
+               <li>
+                  <relation>Child</relation>
+                  <label>Klan member</label>
+                  <femaleLabel>Klan member</femaleLabel>
+               </li>
+            </renamer>
         </relationSettings>
         <raceRestriction>
             <researchList>
@@ -792,29 +441,21 @@
                 </li>
             </researchList>
 			<apparelList>
-                <li>OGO_Wargear_BossPole</li>
-                <li>OGO_Apparel_LevaElmet</li>
-                <li>OGO_Apparel_Elmet</li>
-                <li>OGO_Apparel_EavyElmet</li>
-                <li>OGO_Apparel_MegaArmourElmet</li>
-                <li>OGO_Apparel_IronGob</li>
+			
                 <li>OGO_Apparel_LevaArmour</li>
-                <li>OGO_Apparel_Armour</li>
-                <li>OGO_Apparel_EavyArmour</li>
-                <li>OGO_Apparel_MegaArmour</li>
-                <li>OGO_Wargear_KustomForcefield</li>
                 <li>OGO_Apparel_UniformShirt</li>
                 <li>OGO_Apparel_UniformJacket</li>
+                <li>OGO_Wargear_KustomForcefield</li>
 			</apparelList>
             <recipeList>
+                <li>OGO_Apparel_UniformShirt</li>
+                <li>OGO_Apparel_UniformJacket</li>
                 <li>OGO_Wargear_BossPole</li>
                 <li>OGO_Apparel_LevaElmet</li>
                 <li>OGO_Apparel_Elmet</li>
                 <li>OGO_Apparel_EavyElmet</li>
                 <li>OGO_Apparel_MegaArmourElmet</li>
                 <li>OGO_Apparel_IronGob</li>
-                <li>OGO_Apparel_UniformShirt</li>
-                <li>OGO_Apparel_UniformJacket</li>
                 <li>OGO_Apparel_LevaArmour</li>
                 <li>OGO_Apparel_Armour</li>
                 <li>OGO_Apparel_EavyArmour</li>
@@ -852,36 +493,37 @@
 			<buildingList>
                 <li>OG_Ork_TableMachining</li>
             </buildingList>
+			<conceptList>
+				<li>OrkoidFungus</li>
+			</conceptList>
         </raceRestriction>
     </alienRace>
 	<statBases>
-		<MarketValue>2000</MarketValue>
-		<MoveSpeed>4.5</MoveSpeed>
-		<Flammability>0.3</Flammability>
-		<ComfyTemperatureMin>3</ComfyTemperatureMin>
-		<ComfyTemperatureMax>42</ComfyTemperatureMax>
-		<LeatherAmount>55</LeatherAmount>
-        <CarryingCapacity>100</CarryingCapacity>
-		<PsychicSensitivity>0.35</PsychicSensitivity>
-		<MiningSpeed>1.4</MiningSpeed>
-		<ShootingAccuracyPawn>-0.32</ShootingAccuracyPawn>
-		<AimingDelayFactor>-0.25</AimingDelayFactor>
-		<MentalBreakThreshold>0.020</MentalBreakThreshold>
-        <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
-        <PainShockThreshold>0.95</PainShockThreshold>
-        <ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
-        <GlobalLearningFactor>0.85</GlobalLearningFactor>
-        <MeleeDodgeChance>1.125</MeleeDodgeChance>
-        <MeleeHitChance>1.25</MeleeHitChance>
-        <GeneralLaborSpeed>0.75</GeneralLaborSpeed>
-        <ButcheryFleshSpeed>1.5</ButcheryFleshSpeed>
-        <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
-        <SmeltingSpeed>0.5</SmeltingSpeed>
-        <NegotiationAbility>0.5</NegotiationAbility>
-        <SocialImpact>0.5</SocialImpact>
-        <TradePriceImprovement>0.5</TradePriceImprovement>
-		<!--
-		-->
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <Flammability>0.3</Flammability>
+      <ComfyTemperatureMin>6</ComfyTemperatureMin>
+      <ComfyTemperatureMax>35</ComfyTemperatureMax>
+      <LeatherAmount>15</LeatherAmount>
+      <CarryingCapacity>50</CarryingCapacity>
+	  <PsychicSensitivity>0.35</PsychicSensitivity>
+	  <MiningSpeed>0.8</MiningSpeed>
+	  <ShootingAccuracyPawn>0.32</ShootingAccuracyPawn>
+	  <AimingDelayFactor>0.75</AimingDelayFactor>
+	  <MentalBreakThreshold>0.045</MentalBreakThreshold>
+	  <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+      <PainShockThreshold>0.75</PainShockThreshold>
+      <ForagedNutritionPerDay>1.5</ForagedNutritionPerDay>
+      <GlobalLearningFactor>0.75</GlobalLearningFactor>
+      <MeleeDodgeChance>1.35</MeleeDodgeChance>
+      <MeleeHitChance>0.85</MeleeHitChance>
+      <GeneralLaborSpeed>0.92</GeneralLaborSpeed>
+      <ButcheryFleshSpeed>1.25</ButcheryFleshSpeed>
+      <ButcheryFleshEfficiency>0.75</ButcheryFleshEfficiency>
+      <SmeltingSpeed>0.75</SmeltingSpeed>
+      <NegotiationAbility>0.75</NegotiationAbility>
+      <SocialImpact>0.75</SocialImpact>
+      <TradePriceImprovement>0.85</TradePriceImprovement>
     </statBases>
   <tools>
       <li>
@@ -889,14 +531,14 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>3</power>
         <cooldownTime>1.6</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>22</amount>
+              <amount>11</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -906,14 +548,14 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>3</power>
         <cooldownTime>1.6</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <surpriseAttack>
           <extraMeleeDamages>
             <li>
               <def>Stun</def>
-              <amount>22</amount>
+              <amount>11</amount>
             </li>
           </extraMeleeDamages>
         </surpriseAttack>
@@ -923,7 +565,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>2</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <chanceFactor>0.2</chanceFactor>
@@ -934,15 +576,15 @@
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
-      <lifeExpectancy>600</lifeExpectancy>
-      <leatherDef>Leather_Ork</leatherDef>
-      <nameGenerator>NamerPerson_Ork_OG</nameGenerator>
+      <lifeExpectancy>300</lifeExpectancy>
+      <leatherDef>Leather_Grot</leatherDef>
+      <nameGenerator>NamerPerson_Grot_OG</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
       <fleshType>OG_Flesh_Orkoid</fleshType>
-      <meatColor>(200,135,100)</meatColor>
-      <baseBodySize>1.25</baseBodySize>
-      <baseHealthScale>1.25</baseHealthScale>
+      <meatColor>(64, 128, 64)</meatColor>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1.05</baseHealthScale>
       <foodType>OmnivoreAnimal</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
       <litterSizeCurve>
@@ -955,24 +597,16 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>OrkoidWhelp</def>
+          <def>GrotWhelp</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>OrkoidRunt</def>
+          <def>GrotRunt</def>
           <minAge>1</minAge>
         </li>
         <li>
-          <def>OrkoidAdult</def>
+          <def>GrotAdult</def>
           <minAge>2</minAge>
-        </li>
-        <li>
-          <def>OrkoidNob</def>
-          <minAge>30</minAge>
-        </li>
-        <li>
-          <def>OrkoidWarboss</def>
-          <minAge>50</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -985,15 +619,9 @@
       <ageGenerationCurve>
         <points>
 			<li>(0,0)</li>
-			<li>(3,200)</li>
-			<li>(10,250)</li>
-			<li>(20,150)</li>
-			<li>(30,100)</li>
-			<li>(40,12)</li>
-			<li>(50,6)</li>
-			<li>(120,1)</li>
-			<li>(140,1)</li>
-			<li>(200,0)</li>
+			<li>(2,200)</li>
+			<li>(5,10)</li>
+			<li>(10,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
@@ -1060,10 +688,10 @@
     </comps>
 </AlienRace.ThingDef_AlienRace>
 
-<AlienRace.ThingDef_AlienRace ParentName="OG_Ork_Race">
-    <defName>OG_Alien_Ork</defName>
-    <label>Ork</label>
-    <description>The pinnacle of the orkoid species: A fully grown Ork.</description>
+<AlienRace.ThingDef_AlienRace ParentName="OG_Grot_Race">
+    <defName>OG_Alien_Grot</defName>
+    <label>Grot</label>
+    <description>The worker of the orkoid species: A fully grown Grot.</description>
 </AlienRace.ThingDef_AlienRace>
 
 </Defs>

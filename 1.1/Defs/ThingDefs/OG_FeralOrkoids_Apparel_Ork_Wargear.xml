@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Ork - Wargear S 2 ========================== -->
+    <!-- ========================= Ork - Boss Pole ========================== -->
+	<ThingDef ParentName="OGOArmorMakeableBase">
+		<defName>OGO_Wargear_BossPole</defName>
+		<label>Boss Pole</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Ork/BossPole/Ork_BossPole</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	<comps> 
+	
+	</comps>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<SocialImpact>0.05</SocialImpact>
+			<NegotiationAbility>0.05</NegotiationAbility>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+		  <li>Metallic</li>
+		</stuffCategories>
+		<recipeMaker>
+			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<bodyPartGroups>
+				<li>Waist</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Item/Apparel/Ork/BossPole/Ork_BossPole</wornGraphicPath>
+			<layers>
+				<li>BeltWargear2</li>
+			</layers>
+			<tags>
+				<li>OGOWargear</li>
+				<li>BossPole</li>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+				<li>RoyalCombatGear</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>OGOWargear</li>
+		</tradeTags>
+		<generateCommonality>0.03</generateCommonality>
+	</ThingDef>
+</Defs>
