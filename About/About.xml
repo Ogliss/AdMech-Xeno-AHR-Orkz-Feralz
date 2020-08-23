@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Playable Feral Orkz R1.0</name>
+	<name>Playable Feral Orkz</name>
 	<author>Ogliss</author>
 	<supportedVersions>
         <li>1.0</li>
@@ -8,7 +8,7 @@
         <li>1.2</li>
 	</supportedVersions>
    <packageId>Ogliss.FeralOrkz</packageId>
-	<description>V1.0
+	<description>V1.5
 	Requires new start or  one of those faction managers.
 	Adds plyable WHF Orks
 		</description>
