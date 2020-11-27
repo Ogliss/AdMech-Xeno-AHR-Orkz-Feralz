@@ -8,3 +8,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\1.1\Source\FeralOrkz\obj\Debug\FeralOrkz.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\1.1\Source\FeralOrkz\obj\Debug\FeralOrkz.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\1.1\Source\FeralOrkz\obj\Debug\FeralOrkz.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Orkz-Feralz\1.1\Source\FeralOrkz\obj\Debug\FeralOrkz.csproj.CoreCompileInputs.cache

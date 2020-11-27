@@ -8,6 +8,11 @@
     <statBases>
       <MoveSpeed>6.0</MoveSpeed>
       <MarketValue>450</MarketValue>
+	  <MeleeDodgeChance>0.06</MeleeDodgeChance>
+	  <MeleeCritChance MayRequire="CETeam.CombatExtended">0.41</MeleeCritChance>
+	  <MeleeParryChance MayRequire="CETeam.CombatExtended">0.48</MeleeParryChance>
+	  <ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.125</ArmorRating_Sharp>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
     </statBases>
     <tools>
@@ -122,6 +127,11 @@
 		<onlyWhileSleeping>false</onlyWhileSleeping>
       </li-->
     </comps>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Quadruped</bodyShape>
+		</li>
+    </modExtensions>
   </ThingDef>
   
   <PawnKindDef Name="OG_Squig" ParentName="AnimalKindBase">
@@ -130,10 +140,18 @@
     <race>OG_Squig</race>
     <combatPower>160</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
-    <alternateGraphicChance>0.99</alternateGraphicChance>
+    <alternateGraphicChance>1</alternateGraphicChance>
     <alternateGraphics>
-      <li><color>(64,80,26)</color></li>
-      <li><color>(54,78,26)</color></li>
+      <li><color>(74,88,26)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(56,52,100)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(0,120,73)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(122,88,70)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(143,115,0)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(152,119,0)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(9,88,125)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(54,78,26)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(54,78,26)</color><colorTwo>(203,163,106)</colorTwo></li>
+      <li><color>(112,24,16)</color><colorTwo>(203,163,106)</colorTwo></li>
     </alternateGraphics>
     <lifeStages>
       <li>

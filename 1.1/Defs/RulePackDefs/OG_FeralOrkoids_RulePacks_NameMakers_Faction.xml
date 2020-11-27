@@ -25,14 +25,14 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerBases_Ork_OG</defName>
+		<defName>OG_NamerBases_Ork</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[OGOrkBaseNames]</li>
+				<li>name->[OG_FeralOrk_BaseNames]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
-					<keyword>OGOrkBaseNames</keyword>
+					<keyword>OG_FeralOrk_BaseNames</keyword>
 					<path>NameBanks/OG_AMXBO_Ork_BaseNames</path>
 				</li>
 			</rulesRaw>
@@ -40,7 +40,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPerson_Ork_OG</defName>
+		<defName>OG_NamerPerson_Ork</defName>
 		<rulePack>
 		  <rulesStrings>
 			<li>name->[OGOrkFirst] [OGOrkSecond]</li>
@@ -65,7 +65,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerPerson_Grot_OG</defName>
+		<defName>OG_NamerPerson_Grot</defName>
 		<rulePack>
 		  <rulesStrings>
 			<li>name->[OGOrkFirst] [OGOrkSecond]</li>
@@ -90,7 +90,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerAnimal_Snotling_OG</defName>
+		<defName>OG_NamerAnimal_Snotling</defName>
 		<rulePack>
 		  <rulesStrings>
 			<li>name->[OGSnotFirst]</li>
@@ -110,7 +110,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerOGOrkFaction</defName>
+		<defName>OG_FeralOrk_NamerFaction</defName>
 		<rulePack>
 		  <rulesStrings>
 			<li>name->[OGOrkClans1] [OGOrkClans2] [OGOrkClans3]</li>
@@ -133,15 +133,15 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerOGOrkBases</defName>
+		<defName>OG_FeralOrk_NamerBases</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[OGOrkBaseNames]</li>
+				<li>name->[OG_FeralOrk_BaseNames]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
-					<keyword>OGOrkBaseNames</keyword>
-					<path>NameBanks/OGOrkBaseNames</path>
+					<keyword>OG_FeralOrk_BaseNames</keyword>
+					<path>NameBanks/OG_FeralOrk_BaseNames</path>
 				</li>
 			</rulesRaw>
 		</rulePack>

@@ -41,6 +41,8 @@
     <Compile Include="ExtentionMethods\Listing_StandardExtensions.cs" />
     <Compile Include="ExtentionMethods\DamageDefExtensions.cs" />
     <Compile Include="ExtentionMethods\PawnExtensions.cs" />
+    <Compile Include="Harmony\QuestGen_Pawns_GeneratePawn_Patch.cs" />
+    <Compile Include="Harmony\BackCompatibility_BackCompatibleDefName_Patch.cs" />
     <Compile Include="ToolUserPskyerDefExtension.cs" />
     <Compile Include="CompForceWeaponActivatableEffect.cs" />
     <Compile Include="CompAlwaysActivatableEffect.cs" />
@@ -70,10 +72,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.1.2654</Version>
+      <Version>1.2.2753</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.0.1</Version>
+      <Version>2.0.2</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

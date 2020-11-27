@@ -304,84 +304,13 @@
 				<li>
 					<factions>
 					   <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_PlayerColony</li>
 					   <li>OG_Ork_PlayerTribe</li>
+					   <!--li>OG_Grot_Feral_Faction</li-->
+					   <!--li>OG_Grot_PlayerTribe</li-->
 					</factions>
 					<goodwill>
 					   <min>-10</min>
 					   <max>40</max>
-					</goodwill>
-				</li>
-				<li>
-					<factions>
-					   <li>OG_Eldar_Craftworld_Faction</li>
-					   <li>OG_Eldar_Player_Craftworld</li>
-					   <li>OG_Eldar_Exodite_Faction</li>
-					   <li>OG_Eldar_Player_Exodite</li>
-					   <li>OG_Eldar_Harlequin_Faction</li>
-					   <li>OG_Eldar_Player_Harlequin</li>
-					</factions>
-					<goodwill>
-					   <min>-100</min>
-					   <max>0</max>
-					</goodwill>
-				</li>
-				<li>
-					<factions>
-					   <li>OG_DarkEldar_Faction</li>
-					   <li>OG_DarkEldar_PlayerColony</li>
-					</factions>
-					<goodwill>
-					   <min>-100</min>
-					   <max>0</max>
-					</goodwill>
-				</li>
-				<li>
-					<factions>
-					   <li>OG_Tau_Faction</li>
-					   <li>OG_Kroot_Faction</li>
-					   <li>OG_Tau_PlayerColony</li>
-					   <li>OG_Kroot_PlayerColony</li>
-					   <li>OG_Kroot_PlayerTribe</li>
-					</factions>
-					<goodwill>
-					   <min>-100</min>
-					   <max>-30</max>
-					</goodwill>
-				</li>  
-				<li>
-					<factions>
-					   <li>OG_Mechanicus_Faction</li>
-					   <li>OG_Mechanicus_PlayerColony</li>
-					</factions>
-					<goodwill>
-					   <min>-100</min>
-					   <max>-50</max>
-					</goodwill>
-				</li>
-				<li>
-					<factions>
-					   <li>OG_Militarum_Cadian_Faction</li>
-					   <li>OG_Militarum_Cadian_Faction</li>
-					   <li>OG_Militarum_PlayerColony</li>
-					</factions>
-					<goodwill>
-					   <min>-100</min>
-					   <max>-50</max>
-					</goodwill>
-				</li>
-				<li>
-					<factions>
-					   <li>OG_Astartes_BloodAngels</li>
-					   <li>OG_Astartes_DarkAngels</li>
-					   <li>OG_Astartes_ImperialFists</li>
-					   <li>OG_Astartes_PlayerColony</li>
-					   <li>OG_AstartesNeophyte_PlayerColony</li>
-					</factions>
-					<goodwill>
-					   <min>-100</min>
-					   <max>-50</max>
 					</goodwill>
 				</li>
 			</factionRelations>
@@ -454,10 +383,10 @@
                     <original>DeadMansApparel</original>
                     <replacer>DeadMansApparel_OGOrkoid</replacer> 
                 </li>
-                <li>
+                <!--li>
                     <original>HumanLeatherApparelSad</original>
                     <replacer>HumanLeatherApparelSad_OGOrkoid</replacer> 
-                </li>
+                </li-->
                 <li>
                     <original>HumanLeatherApparelHappy</original>
                     <replacer>HumanLeatherApparelHappy_OGOrkoid</replacer> 
@@ -564,7 +493,7 @@
                 <li>Greedy_OGOrkoid</li>
                 <li>ApparelDamaged_OGOrkoid</li>
                 <li>DeadMansApparel_OGOrkoid</li>
-                <li>HumanLeatherApparelSad_OGOrkoid</li>
+                <!--li>HumanLeatherApparelSad_OGOrkoid</li-->
                 <li>HumanLeatherApparelHappy_OGOrkoid</li>
                 <li>ButcheredHumanlikeCorpseOpinion_OGOrkoid</li>
                 <li>AteRawHumanlikeMeat_OGOrkoid</li>
@@ -612,12 +541,12 @@
 				<li>KnowColonistExecuted</li>
 				<li>KnowColonistDied</li>
 				<li>PawnWithGoodOpinionDied</li>
+				<li>FeelingRandom</li>
+				<li>CabinFever</li>
 				-->
 				<li>EnvironmentDark</li>
 				<li>Pain</li>
 				<li>ApparelDamaged</li>
-				<li>FeelingRandom</li>
-				<li>CabinFever</li>
 				<li>Sick</li>
 				
 				<li>KnowGuestExecuted</li>
@@ -663,15 +592,11 @@
                     <projects>
 						<li>OG_Ork_Tech_Base_T1</li>
 						<li>OG_Ork_Tech_Weapons_Melee_T1</li>
-						<li>OG_Ork_Tech_Weapons_Ranged_T1</li>
 						<li>OG_Ork_Tech_Apparel_Armour_T1</li>
 						<li>OG_Ork_Tech_Weapons_Melee_T2</li>
 						<li>OG_Ork_Tech_Apparel_Armour_T2</li>
-						<li>OG_Ork_Tech_Weapons_Ranged_T2</li>
 						<li>OG_Ork_Tech_Base_T2</li>
 						<li>OG_Ork_Tech_Weapons_Melee_T3</li>
-						<li>OG_Ork_Tech_Base_T3</li>
-						<li>OG_Ork_Tech_Apparel_Armour_T3</li>
                     </projects>
 					
                     <apparelList>
@@ -684,53 +609,27 @@
                 <li>OGO_Apparel_LevaElmet</li>
                 <li>OGO_Apparel_Elmet</li>
                 <li>OGO_Apparel_EavyElmet</li>
-                <li>OGO_Apparel_MegaArmourElmet</li>
                 <li>OGO_Apparel_IronGob</li>
                 <li>OGO_Apparel_LevaArmour</li>
                 <li>OGO_Apparel_Armour</li>
                 <li>OGO_Apparel_EavyArmour</li>
-                <li>OGO_Apparel_MegaArmour</li>
-                <li>OGO_Wargear_KustomForcefield</li>
                 <li>OGO_Apparel_UniformShirt</li>
                 <li>OGO_Apparel_UniformJacket</li>
 			</apparelList>
             <recipeList>
-                <li>OGO_Wargear_BossPole</li>
-                <li>OGO_Apparel_LevaElmet</li>
-                <li>OGO_Apparel_Elmet</li>
-                <li>OGO_Apparel_EavyElmet</li>
-                <li>OGO_Apparel_MegaArmourElmet</li>
-                <li>OGO_Apparel_IronGob</li>
-                <li>OGO_Apparel_UniformShirt</li>
-                <li>OGO_Apparel_UniformJacket</li>
-                <li>OGO_Apparel_LevaArmour</li>
-                <li>OGO_Apparel_Armour</li>
-                <li>OGO_Apparel_EavyArmour</li>
-                <li>OGO_Apparel_MegaArmour</li>
-                <li>OGO_Wargear_KustomForcefield</li>
-                <li>OGO_GrenadePack_Frag</li>
-                <li>OGO_GrenadePack_Krak</li>
-                <li>OGO_GrenadePack_Melta</li>
-                <li>OGO_Melee_CrudeChoppa</li>
-                <li>OGO_Melee_Choppa</li>
-                <li>OGO_Melee_ChainChoppa</li>
-                <li>OGO_Melee_BigChoppa</li>
-                <li>OGO_Melee_PowerKlaw</li>
-                <li>OGO_Gun_GrotBlasta</li>
-                <li>OGO_Gun_Slugga</li>
-                <li>OGO_Gun_Shoota</li>
-                <li>OGO_Gun_TwinLinkedShoota</li>
-                <li>OGO_Gun_BigShoota</li>
-                <li>OGO_Gun_Snazzgun</li>
-                <li>OGO_Gun_ZappKannon</li>
-                <li>OGO_Gun_Burna</li>
-                <li>OGO_Gun_Scorcha</li>
-                <li>OGO_Gun_RokkitLaucha</li>
-                <li>OGO_Gun_KombiBurna</li>
-                <li>OGO_Gun_KombiRokkit</li>
-                <li>OGO_Gun_DeffgunPlasma</li>
-                <li>OGO_Gun_DeffgunBeamy</li>
-                <li>OGO_Gun_DeffgunDakka</li>
+                <li>Make_OGO_Wargear_BossPole</li>
+                <li>Make_OGO_Apparel_LevaElmet</li>
+                <li>Make_OGO_Apparel_Elmet</li>
+                <li>Make_OGO_Apparel_EavyElmet</li>
+                <li>Make_OGO_Apparel_IronGob</li>
+                <li>Make_OGO_Apparel_UniformShirt</li>
+                <li>Make_OGO_Apparel_UniformJacket</li>
+                <li>Make_OGO_Apparel_LevaArmour</li>
+                <li>Make_OGO_Apparel_Armour</li>
+                <li>Make_OGO_Apparel_EavyArmour</li>
+                <li>Make_OGO_Melee_CrudeChoppa</li>
+                <li>Make_OGO_Melee_Choppa</li>
+                <li>Make_OGO_Melee_BigChoppa</li>
             </recipeList>
             <plantList>
                 <li>OG_Plant_Orkoid_Fungus</li>
@@ -738,7 +637,7 @@
             </plantList>
            <!-- <onlyDoRaceRestrictedPlants>true</onlyDoRaceRestrictedPlants> -->
 			<buildingList>
-                <li>OG_Ork_TableMachining</li>
+                <!--li>OG_Ork_TableMachining</li-->
             </buildingList>
         </raceRestriction>
     </alienRace>
@@ -824,7 +723,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>600</lifeExpectancy>
       <leatherDef>Leather_Ork</leatherDef>
-      <nameGenerator>NamerPerson_Ork_OG</nameGenerator>
+      <nameGenerator>OG_NamerPerson_Ork</nameGenerator>
       <body>Human</body>
       <bloodDef>OG_FilthBlood_Orkoid</bloodDef>	
       <fleshType>OG_Flesh_Orkoid</fleshType>
@@ -843,23 +742,23 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>OrkoidWhelp</def>
+          <def>OG_Lifestage_Ork_Whelp</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>OrkoidRunt</def>
+          <def>OG_Lifestage_Ork_Runt</def>
           <minAge>1</minAge>
         </li>
         <li>
-          <def>OrkoidAdult</def>
+          <def>OG_Lifestage_Ork_Adult</def>
           <minAge>2</minAge>
         </li>
         <li>
-          <def>OrkoidNob</def>
+          <def>OG_Lifestage_Ork_Nob</def>
           <minAge>30</minAge>
         </li>
         <li>
-          <def>OrkoidWarboss</def>
+          <def>OG_Lifestage_Ork_Boss</def>
           <minAge>50</minAge>
         </li>
       </lifeStageAges>

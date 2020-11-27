@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
   <LifeStageDef>
-    <defName>OrkoidWhelp</defName>
+    <defName>OG_Lifestage_Ork_Whelp</defName>
     <label>Git</label>
     <bodySizeFactor>0.5</bodySizeFactor>
 		<foodMaxFactor>0.5</foodMaxFactor>
@@ -15,7 +15,7 @@
   </LifeStageDef>
   
   <LifeStageDef>
-    <defName>OrkoidRunt</defName>
+    <defName>OG_Lifestage_Ork_Runt</defName>
     <label>Runt</label>
     <bodySizeFactor>0.75</bodySizeFactor>
 		<foodMaxFactor>1</foodMaxFactor>
@@ -29,14 +29,14 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>OrkoidAdult</defName>
+    <defName>OG_Lifestage_Ork_Adult</defName>
     <label>Boy</label>
     <visible>false</visible>
     <reproductive>true</reproductive>
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>OrkoidNob</defName>
+    <defName>OG_Lifestage_Ork_Nob</defName>
     <label>Nob</label>
     <bodySizeFactor>1.05</bodySizeFactor>
 		<foodMaxFactor>1.25</foodMaxFactor>
@@ -50,7 +50,7 @@
   </LifeStageDef>
   
   <LifeStageDef>
-    <defName>OrkoidWarboss</defName>
+    <defName>OG_Lifestage_Ork_Boss</defName>
     <label>Boss</label>
     <bodySizeFactor>1.175</bodySizeFactor>
 		<foodMaxFactor>1.5</foodMaxFactor>

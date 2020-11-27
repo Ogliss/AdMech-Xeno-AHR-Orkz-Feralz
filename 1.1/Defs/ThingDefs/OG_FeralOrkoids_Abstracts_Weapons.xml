@@ -42,6 +42,9 @@
     <thingCategories>
       <li>WeaponsMelee</li>
     </thingCategories>
+	<weaponTags>
+		<li>OGOMelee</li>
+	</weaponTags>
 
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

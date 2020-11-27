@@ -588,11 +588,11 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>OrkoidRunt</def>
+          <def>OG_Lifestage_Ork_Runt</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>OrkoidAdult</def>
+          <def>OG_Lifestage_Ork_Adult</def>
           <minAge>17</minAge>
         </li>
       </lifeStageAges>
@@ -1013,11 +1013,11 @@
       </litterSizeCurve>
       <lifeStageAges>
         <li>
-          <def>OrkoidRunt</def>
+          <def>OG_Lifestage_Ork_Runt</def>
           <minAge>0</minAge>
         </li>
         <li>
-          <def>OrkoidAdult</def>
+          <def>OG_Lifestage_Ork_Adult</def>
           <minAge>20</minAge>
         </li>
       </lifeStageAges>

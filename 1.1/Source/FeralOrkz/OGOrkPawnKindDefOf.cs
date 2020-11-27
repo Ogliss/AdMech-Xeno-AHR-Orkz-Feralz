@@ -14,13 +14,16 @@ namespace RimWorld
         }
 
         public static PawnKindDef OG_Squig;
-
         public static PawnKindDef OG_Snotling;
 
-        public static PawnKindDef Tribesperson_OG_Grot;
         public static PawnKindDef Tribesperson_OG_Ork;
+        public static PawnKindDef Refugee_FeralOrk;
+        public static PawnKindDef StrangerInBlack_FeralOrk;
+        public static PawnKindDef OG_Ork_Wild;
 
+        public static PawnKindDef Tribesperson_OG_Grot;
+        public static PawnKindDef Refugee_FeralGrot;
+        public static PawnKindDef StrangerInBlack_FeralGrot;
         public static PawnKindDef OG_Grot_Wild;
-        public static PawnKindDef OG_Ork_Wild; 
     }
 }

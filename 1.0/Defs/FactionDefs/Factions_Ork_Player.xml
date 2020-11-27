@@ -14,8 +14,8 @@
     <basicMemberKind>FeralOrk</basicMemberKind>
     <pawnsPlural>boyz</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
-    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+		<factionNameMaker>OG_FeralOrk_NamerFaction</factionNameMaker>
+    <settlementNameMaker>OG_FeralOrk_NamerBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
 			<li>Ork_Standard</li>
@@ -68,8 +68,8 @@
     <basicMemberKind>FeralOrk</basicMemberKind>
     <pawnsPlural>boyz</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
-    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+		<factionNameMaker>OG_FeralOrk_NamerFaction</factionNameMaker>
+    <settlementNameMaker>OG_FeralOrk_NamerBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
 			<li>Ork_Standard</li>
@@ -128,8 +128,8 @@
     <basicMemberKind>FeralGrot</basicMemberKind>
     <pawnsPlural>gitz</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerOGOrkFaction</factionNameMaker>
-    <settlementNameMaker>NamerOGOrkBases</settlementNameMaker>
+		<factionNameMaker>OG_FeralOrk_NamerFaction</factionNameMaker>
+    <settlementNameMaker>OG_FeralOrk_NamerBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
 			<li>Ork_Standard</li>

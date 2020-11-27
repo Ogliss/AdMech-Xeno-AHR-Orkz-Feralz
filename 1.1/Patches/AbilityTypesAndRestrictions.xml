@@ -115,7 +115,7 @@
       <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Base_Child" or @Name = "Ork_Base" or starts-with(*,'Ork_Boy_') or starts-with(*,'Ork_Nob_') or starts-with(*,'Ork_Boss_')]/disallowedTraits</xpath>
 		<value>	
 			<li>
-				<defName>Gifted</defName>
+				<defName>TM_Gifted</defName>
 			</li>
 			<li>
 				<defName>InnerFire</defName>
@@ -180,7 +180,7 @@
       <xpath>/Defs/AlienRace.BackstoryDef[defName = "Grot_Base_Child" or @Name = "Grot_Base" or starts-with(*,'Grot_')]/disallowedTraits</xpath>
 		<value>	
 			<li>
-				<defName>Gifted</defName>
+				<defName>TM_Gifted</defName>
 			</li>
 			<li>
 				<defName>InnerFire</defName>
@@ -353,7 +353,7 @@
       <xpath>/Defs/AlienRace.BackstoryDef[defName = "Ork_Weird_Child" or defName = "Weird_Grot"]/forcedTraits</xpath>
 		<value>	
 			<li>
-				<defName>Gifted</defName>
+				<defName>TM_Gifted</defName>
 				<degree>2</degree>
 				<chance>75</chance>
 			</li>

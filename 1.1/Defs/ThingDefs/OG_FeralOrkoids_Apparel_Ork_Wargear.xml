@@ -4,8 +4,9 @@
     <!-- ========================= Ork - Boss Pole ========================== -->
 	<ThingDef ParentName="OGOArmorMakeableBase">
 		<defName>OGO_Wargear_BossPole</defName>
+		<ignoreConfigErrors>true</ignoreConfigErrors>
 		<label>Boss Pole</label>
-		<description>.</description>
+		<description>Senior Orks, such as Nobs, Big Meks or Warbosses usually carry around some sign of their status, that shows that they are not the ones to be messed with. These items help them to bring their mob into order during the battle.\n\nThese items usually take a form of a huge metal stick, heavy with trophies or crude metal glyphs, proclaiming their user's hardness and ferociousness. They are known as Bosspoles or Backbanners It has the additional advantage of being able to be used to hit boyz that attempt to run away from battle.</description>
 		<graphicData>
 			<texPath>Things/Item/Apparel/Ork/BossPole/Ork_BossPole</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -42,7 +43,7 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Item/Apparel/Ork/BossPole/Ork_BossPole</wornGraphicPath>
 			<layers>
-				<li>BeltWargear2</li>
+				<li>Belt</li>
 			</layers>
 			<tags>
 				<li>OGOWargear</li>

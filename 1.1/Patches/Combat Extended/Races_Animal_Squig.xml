@@ -49,7 +49,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>left claw</label>
 					<capacities>
-						<li>Slash</li>
+						<li>Scratch</li>
 					</capacities>
 					<power>14</power>
 					<cooldownTime>1.5</cooldownTime>
@@ -67,7 +67,7 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>right claw</label>
 					<capacities>
-						<li>Slash</li>
+						<li>Scratch</li>
 					</capacities>
 					<power>14</power>
 					<cooldownTime>1.5</cooldownTime>

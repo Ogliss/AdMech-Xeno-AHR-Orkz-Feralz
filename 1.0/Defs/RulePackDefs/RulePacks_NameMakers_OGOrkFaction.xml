@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerOGOrkFaction</defName>
+		<defName>OG_FeralOrk_NamerFaction</defName>
 		<rulePack>
 		  <rulesStrings>
 			<li>name->[OGOrkClans1] [OGOrkClans2] [OGOrkClans3]</li>
@@ -25,15 +25,15 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerOGOrkBases</defName>
+		<defName>OG_FeralOrk_NamerBases</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[OGOrkBaseNames]</li>
+				<li>name->[OG_FeralOrk_BaseNames]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
-					<keyword>OGOrkBaseNames</keyword>
-					<path>NameBanks/OGOrkBaseNames</path>
+					<keyword>OG_FeralOrk_BaseNames</keyword>
+					<path>NameBanks/OG_FeralOrk_BaseNames</path>
 				</li>
 			</rulesRaw>
 		</rulePack>

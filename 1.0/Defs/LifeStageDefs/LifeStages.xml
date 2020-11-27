@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
   <LifeStageDef>
-    <defName>OrkoidRunt</defName>
+    <defName>OG_Lifestage_Ork_Runt</defName>
     <label>runt</label>
     <bodySizeFactor>0.5</bodySizeFactor>
 		<foodMaxFactor>1</foodMaxFactor>
@@ -15,7 +15,7 @@
   </LifeStageDef>
 
   <LifeStageDef>
-    <defName>OrkoidAdult</defName>
+    <defName>OG_Lifestage_Ork_Adult</defName>
     <label>adult</label>
     <visible>false</visible>
     <reproductive>true</reproductive>

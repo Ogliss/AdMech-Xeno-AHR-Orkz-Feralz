@@ -4,6 +4,7 @@ using System.Linq;
 using FeralOrkz.ExtensionMethods;
 using HarmonyLib;
 using RimWorld;
+using RimWorld.QuestGen;
 using UnityEngine;
 using Verse;
 using Verse.AI;
@@ -13,23 +14,58 @@ namespace FeralOrkz
     [StaticConstructorOnStartup]
     public static class HarmonyMain
     {
-        private static readonly Type patchType = typeof(HarmonyMain);
         static HarmonyMain()
         {
             var harmony = new Harmony("RimWorld.Ogliss.FeralOrkz");
 
-            harmony.Patch(
-                original: AccessTools.Method(type: typeof(FoodUtility), name: "AddFoodPoisoningHediff"),
-                prefix: new HarmonyMethod(patchType, nameof(Prefix_AddFoodPoisoningHediff_Orkoid)),
-                postfix: null);
-            harmony.Patch(
-                original: AccessTools.Method(type: typeof(Verb_MeleeAttackDamage), name: "DamageInfosToApply"),
-                prefix: null,
-                postfix: new HarmonyMethod(patchType, nameof(Postfix_ForceWeaponAttack)));
-            harmony.Patch(
-                original: AccessTools.Method(type: typeof(PawnBioAndNameGenerator), name: "GiveShuffledBioTo"),
-                prefix: new HarmonyMethod(patchType, nameof(Prefix_GiveShuffledBioTo_Orkoid)),
-                postfix: null);
+            harmony.Patch
+                (
+                    original: AccessTools.Method(type: typeof(FoodUtility), name: "AddFoodPoisoningHediff"),
+                    prefix: new HarmonyMethod(typeof(HarmonyMain), nameof(Prefix_AddFoodPoisoningHediff_Orkoid)),
+                    postfix: null
+                );
+            harmony.Patch
+                (
+                    original: AccessTools.Method(type: typeof(QuestGen_Pawns), name: "GeneratePawn", new Type[]
+                        {
+                            typeof(Quest),
+                            typeof(PawnKindDef),
+                            typeof(Faction),
+                            typeof(bool),
+                            typeof(IEnumerable<TraitDef>),
+                            typeof(float),
+                            typeof(bool),
+                            typeof(Pawn),
+                            typeof(float),
+                            typeof(float),
+                            typeof(bool),
+                            typeof(bool)
+                        }),
+                    prefix: new HarmonyMethod(typeof(QuestGen_Pawns_GeneratePawn_Patch), "GeneratePawn_Prefix"),
+                    postfix: null
+                );
+
+            /*
+             *  float biocodeApparelChance = 0f, bool ensureNonNumericName = false, bool
+             */
+            harmony.Patch
+                (
+                    original: AccessTools.Method(type: typeof(Verb_MeleeAttackDamage), name: "DamageInfosToApply"),
+                    prefix: null,
+                    postfix: new HarmonyMethod(typeof(HarmonyMain), nameof(Postfix_ForceWeaponAttack))
+                );
+            harmony.Patch
+                (
+                    original: AccessTools.Method(type: typeof(PawnBioAndNameGenerator), name: "GiveShuffledBioTo"),
+                    prefix: new HarmonyMethod(typeof(HarmonyMain), nameof(Prefix_GiveShuffledBioTo_Orkoid)),
+                    postfix: null
+                );
+            harmony.Patch
+                (
+                    original: AccessTools.Method(type: typeof(BackCompatibility), name: "BackCompatibleDefName"),
+                    prefix: null,
+                    postfix: new HarmonyMethod(typeof(BackCompatibility_BackCompatibleDefName_Patch), "BackCompatibleDefName_Postfix")
+                );
         }
 
         public static bool Prefix_AddFoodPoisoningHediff_Orkoid(Pawn pawn, Thing ingestible, FoodPoisonCause cause)

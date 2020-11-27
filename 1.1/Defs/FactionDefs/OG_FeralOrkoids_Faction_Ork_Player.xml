@@ -9,7 +9,7 @@
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
-    <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
+    <settlementNameMaker>OG_NamerBases_Ork</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
 		<backstoryFilters>
 		  <li>
@@ -73,7 +73,7 @@
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
-    <settlementNameMaker>NamerBases_Ork_OG</settlementNameMaker>
+    <settlementNameMaker>OG_NamerBases_Ork</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
 		<backstoryFilters>
 		  <li>

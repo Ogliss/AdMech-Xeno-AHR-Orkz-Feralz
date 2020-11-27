@@ -17,5 +17,8 @@ namespace RimWorld
 
 		    public static FactionDef OG_Ork_PlayerTribe;
 		    public static FactionDef OG_Grot_PlayerTribe;
+
+		    public static FactionDef OG_Ork_Feral_Faction;
+		    public static FactionDef OG_Ork_FeralRefugee_Faction;
 	}
 }
