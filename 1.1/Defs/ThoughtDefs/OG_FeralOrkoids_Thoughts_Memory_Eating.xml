@@ -134,14 +134,14 @@
 			<icon>Things/Mote/ThoughtSymbol/Food</icon>
 			<durationDays>1</durationDays>
 		<requiredTraits>
-		  <li>Cannibal</li>
+			<li>Cannibal</li>
 		</requiredTraits>
 		<stages>
-		  <li>
+			<li>
 			<label>raw flesh</label>
 			<description>Ate da meat of anunva umie-like ting, raw, dis is da best boss! It was so... juciey.</description>
 			<baseMoodEffect>20</baseMoodEffect>
-		  </li>
+			</li>
 		</stages>
 	</ThoughtDef>
 	

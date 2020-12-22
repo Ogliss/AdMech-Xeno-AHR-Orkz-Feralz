@@ -37,7 +37,7 @@
                 </alienbodytypes>
             </alienPartGenerator>
 			<chemicalSettings>	
-		    </chemicalSettings>
+			  </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
 			<notXenophobistTowards>
 				<li>OG_Alien_Ork</li>
@@ -46,28 +46,28 @@
 			<factionRelations>
 				<li>
 					<factions>
-					   <li>PlayerColony</li>
-					   <li>PlayerTribe</li>
-					   <li>OutlanderCivil</li>
-					   <li>OutlanderRough</li>
-					   <li>TribeCivil</li>
-					   <li>TribeRough</li>
+						 <li>PlayerColony</li>
+						 <li>PlayerTribe</li>
+						 <li>OutlanderCivil</li>
+						 <li>OutlanderRough</li>
+						 <li>TribeCivil</li>
+						 <li>TribeRough</li>
 					</factions>
 					<goodwill>
-					   <min>-100</min>
-					   <max>10</max>
+						 <min>-100</min>
+						 <max>10</max>
 					</goodwill>
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_PlayerTribe</li>
-					   <!--li>OG_Grot_Feral_Faction</li-->
-					   <!--li>OG_Grot_PlayerTribe</li-->
+						 <li>OG_Ork_Feral_Faction</li>
+						 <li>OG_Ork_PlayerTribe</li>
+						 <!--li>OG_Grot_Feral_Faction</li-->
+						 <!--li>OG_Grot_PlayerTribe</li-->
 					</factions>
 					<goodwill>
-					   <min>-10</min>
-					   <max>40</max>
+						 <min>-10</min>
+						 <max>40</max>
 					</goodwill>
 				</li>
 			</factionRelations>
@@ -328,7 +328,7 @@
             <relationChanceModifierFiance>0</relationChanceModifierFiance>
             <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
             <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
-			   <renamer>
+				 <renamer>
                <li>
                   <relation>Sibling</relation>
                   <label>Mob mate</label>

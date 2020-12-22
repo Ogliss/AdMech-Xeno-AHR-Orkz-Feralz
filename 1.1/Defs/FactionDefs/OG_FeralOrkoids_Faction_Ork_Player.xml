@@ -8,15 +8,15 @@
     <basicMemberKind>Tribesperson_OG_Ork</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+	<factionNameMaker>OG_NamerFaction_Ork</factionNameMaker>
     <settlementNameMaker>OG_NamerBases_Ork</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
 		<backstoryFilters>
-		  <li>
+			<li>
 			<categories>
 				<li>Tribal</li>
 			</categories>
-		  </li>
+			</li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
     <factionIconPath>Icons/Ork/Icon_OrkB</factionIconPath>
@@ -72,15 +72,15 @@
     <basicMemberKind>Tribesperson_OG_Grot</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-	<factionNameMaker>NamerFaction_Ork_OG</factionNameMaker>
+	<factionNameMaker>OG_NamerFaction_Ork</factionNameMaker>
     <settlementNameMaker>OG_NamerBases_Ork</settlementNameMaker>
     <techLevel>Neolithic</techLevel>
 		<backstoryFilters>
-		  <li>
+			<li>
 			<categories>
 				<li>Tribal</li>
 			</categories>
-		  </li>
+			</li>
 		</backstoryFilters>
     <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
     <factionIconPath>Icons/Ork/Icon_OrkB</factionIconPath>

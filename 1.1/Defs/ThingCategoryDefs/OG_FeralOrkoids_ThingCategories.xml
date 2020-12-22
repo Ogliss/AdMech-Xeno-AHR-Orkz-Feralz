@@ -24,26 +24,32 @@
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
+		<defName>OGOApparel</defName>
+		<label>Apparel</label>
+		<parent>OGOSub</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
 		<defName>OGOArmour</defName>
-		<label>Ork Armour</label>
+		<label>Armour</label>
 		<parent>OGOSub</parent>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
 		<defName>OGOHeadgear</defName>
-		<label>Ork Headgear</label>
+		<label>Headgear</label>
 		<parent>OGOSub</parent>
 	</ThingCategoryDef>
 	  	
 	<ThingCategoryDef>
 		<defName>OGOAddons</defName>
-		<label>Ork Armour Addons</label>
+		<label>Armour Addons</label>
 		<parent>OGOSub</parent>
 	</ThingCategoryDef>
 		
 	<ThingCategoryDef>
 		<defName>OGOWargear</defName>
-		<label>Ork Wargear</label>
+		<label>Wargear</label>
 		<parent>OGOSub</parent>
 	</ThingCategoryDef>
 

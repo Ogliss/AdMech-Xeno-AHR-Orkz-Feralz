@@ -111,9 +111,9 @@
 				</li>
 				<!-- Scatter some things anywhere -->
 				<li Class="ScenPart_ScatterThingsAnywhere">
-				  <def>ScatterThingsAnywhere</def>
-				  <thingDef>OG_Plant_Orkoid_Fungus</thingDef>
-				  <count>30</count>
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>OG_Plant_Orkoid_Fungus</thingDef>
+					<count>30</count>
 				</li>
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">

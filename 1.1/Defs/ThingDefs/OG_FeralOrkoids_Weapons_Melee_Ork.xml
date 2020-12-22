@@ -251,8 +251,8 @@
 			<MarketValue>1750</MarketValue>
 		</statBases>
 		<equippedStatOffsets>
-		  <PsychicSensitivity>0.50</PsychicSensitivity>
-		  <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
+			<PsychicSensitivity>0.50</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
 		</equippedStatOffsets>
 		<equippedAngleOffset>-25</equippedAngleOffset>
 		<comps>    
@@ -264,15 +264,15 @@
 					<shaderType>CutoutComplex</shaderType>
 					<color>(136,0,54)</color>	
 				</graphicData>		
-				<ForceWeaponEffect>OGForceStrike</ForceWeaponEffect>
-				<ForceWeaponHediff>FWPsychicShock</ForceWeaponHediff>
+				<ForceWeaponEffect>OG_ForceStrike</ForceWeaponEffect>
+				<ForceWeaponHediff>OG_Hediff_FWPsychicShock</ForceWeaponHediff>
 				<ForceWeaponKillChance>0.1</ForceWeaponKillChance>
 				<ForceWeaponTriggerSound>MeleeHit_Metal_ForceWeapon</ForceWeaponTriggerSound>			
 			</li>
 			<!--li Class="FeralOrkz.CompProperties_Weapon_MeleeSpecialRules">
 				<ForceWeapon>true</ForceWeapon>
-				<ForceWeaponEffect>OGForceStrike</ForceWeaponEffect>
-				<ForceWeaponHediff>FWPsychicShock</ForceWeaponHediff>
+				<ForceWeaponEffect>OG_ForceStrike</ForceWeaponEffect>
+				<ForceWeaponHediff>OG_Hediff_FWPsychicShock</ForceWeaponHediff>
 				<ForceWeaponKillChance>0.1</ForceWeaponKillChance>
 				<ForceWeaponTriggerSound>MeleeHit_Metal_ForceWeapon</ForceWeaponTriggerSound>
 			</li--> 

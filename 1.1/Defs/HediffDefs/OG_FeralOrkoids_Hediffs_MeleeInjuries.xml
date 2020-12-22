@@ -139,7 +139,7 @@
 
 	<!-- ==================== Psychic Shock HeDiff ========================= -->
 	<HediffDef ParentName="DiseaseBase">
-    <defName>FWPsychicShock</defName>
+    <defName>OG_Hediff_FWPsychicShock</defName>
 		<description>description</description>
     <label>psychic shock</label>
     <labelNoun>a psychic shock</labelNoun>

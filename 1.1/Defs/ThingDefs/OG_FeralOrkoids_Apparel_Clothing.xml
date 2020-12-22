@@ -83,9 +83,9 @@
         <li>Shell</li>
       </layers>
       <tags>
-		  <li>OGOClothing</li>
-		  <li>OGOUniform</li>
-		  <li>OGOJacket</li>
+			<li>OGOClothing</li>
+			<li>OGOUniform</li>
+			<li>OGOJacket</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ========================= Ork - Wargear S 2 ========================== -->
     <!-- ========================= Ork - Boss Pole ========================== -->
-	<ThingDef ParentName="OGOArmorMakeableBase">
+	<ThingDef ParentName="OGOWargearMakeableBase">
 		<defName>OGO_Wargear_BossPole</defName>
 		<ignoreConfigErrors>true</ignoreConfigErrors>
 		<label>Boss Pole</label>
@@ -32,7 +32,7 @@
 		</costList>
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
-		  <li>Metallic</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<recipeMaker>
 			<researchPrerequisite>OG_Ork_Tech_Base_T1</researchPrerequisite>

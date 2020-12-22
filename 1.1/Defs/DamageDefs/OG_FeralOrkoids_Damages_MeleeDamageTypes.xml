@@ -68,7 +68,7 @@
 
   	<!--==================== Force Strike Damage =========================-->
     <DamageDef ParentName="BluntBase">
-		<defName>OGForceStrike</defName>
+		<defName>OG_ForceStrike</defName>
 		<label>force strike</label>
 		<externalViolence>false</externalViolence>
 		<harmsHealth>false</harmsHealth>
@@ -85,11 +85,11 @@
 		<explosionInteriorMote>Mote_ElectricalSpark</explosionInteriorMote>
 		<combatLogRules>Damage_Bomb</combatLogRules>
 		<additionalHediffs>
-		  <li>
-			<hediff>FWPsychicShock</hediff>
+			<li>
+			<hediff>OG_Hediff_FWPsychicShock</hediff>
 			<severityPerDamageDealt>1</severityPerDamageDealt>
 			<victimSeverityScaling>PsychicSensitivity</victimSeverityScaling>
-		  </li>
+			</li>
 		</additionalHediffs>
 	</DamageDef>
 </Defs>

@@ -11,7 +11,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <thingCategories>
+    <thingCategories Inherit="False">
       <li>OGOArmour</li>
     </thingCategories>
     <statBases>
@@ -72,9 +72,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <thingCategories>
-      <li>OGOArmour</li>
-    </thingCategories>
     <statBases>
 		<MaxHitPoints>100</MaxHitPoints>
 		<MarketValue>1100</MarketValue>
@@ -133,9 +130,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <thingCategories>
-      <li>OGOArmour</li>
-    </thingCategories>
     <statBases>
       <MarketValue>1700</MarketValue>
       <WorkToMake>12000</WorkToMake>
@@ -183,7 +177,7 @@
   
   <!-- ========================= Ork - Special ========================== -->
   <!-- ========================= Ork - Iron Gob ========================== -->
-  <ThingDef ParentName="OGOArmorMakeableBase">
+  <ThingDef ParentName="OGOWargearMakeableBase">
     <defName>OGO_Apparel_IronGob</defName>
     <label>Iron Gob</label>
     <description>A combat mask.\n\n.</description>
